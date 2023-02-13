@@ -21,4 +21,5 @@ require('_prettier')
 require('_null-ls')
 require('_gitsigns')
 require('_git')
+require('_impatient')
 

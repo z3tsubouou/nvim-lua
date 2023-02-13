@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -173,11 +178,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,

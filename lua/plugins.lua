@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
         requires = {{'nvim-lua/plenary.nvim'}}
     }
     use {"nvim-telescope/telescope-file-browser.nvim"}
-    use {'nvim-tree/nvim-tree.lua'}
+    -- use {'nvim-tree/nvim-tree.lua'}
     use {
         "catppuccin/nvim",
         as = "catppuccin"
@@ -55,4 +55,5 @@ return require('packer').startup(function(use)
     }
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
+    use 'lewis6991/impatient.nvim'
 end)
