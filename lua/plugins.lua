@@ -45,5 +45,6 @@ return require('packer').startup(function(use)
     }
     use {'numToStr/Comment.nvim'}
     use {"folke/zen-mode.nvim"}
-
+use('jose-elias-alvarez/null-ls.nvim')
+	use('MunifTanjim/prettier.nvim')
 end)

@@ -1,3 +1,4 @@
+require('base')
 require('maps')
 require('plugins')
 require('_autopairs')
@@ -14,4 +15,6 @@ require('_cmp')
 require('_lspsaga')
 require('_comment')
 require('_zen-mode')
+require('_prettier')
+require('_null-ls')
 
