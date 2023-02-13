@@ -61,4 +61,6 @@ require('lspconfig')['rust_analyzer'].setup {
 }
 require'lspconfig'.svelte.setup {}
 require'lspconfig'.tailwindcss.setup{}
+require'lspconfig'.dockerls.setup{}
+require'lspconfig'.bashls.setup{}
 
