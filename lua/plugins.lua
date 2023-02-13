@@ -1,0 +1,49 @@
+-- This file can be loaded by calling `lua require('plugins')` from your init.vim
+return require('packer').startup(function(use)
+    use 'wbthomason/packer.nvim' -- packer manager
+    use 'neovim/nvim-lspconfig' -- LSP
+    use 'onsails/lspkind-nvim' -- vscode-like pictograms
+    use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+    use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+    use 'hrsh7th/nvim-cmp' -- Completion
+    use "lukas-reineke/indent-blankline.nvim"
+    use 'glepnir/lspsaga.nvim' -- LSP UIs
+    use 'nvim-tree/nvim-web-devicons'
+    use 'L3MON4D3/LuaSnip'
+    use 'windwp/nvim-autopairs'
+    use 'windwp/nvim-ts-autotag'
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = {
+            'kyazdani42/nvim-web-devicons',
+            opt = true
+        }
+    }
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.1',
+        requires = {{'nvim-lua/plenary.nvim'}}
+    }
+    use {"nvim-telescope/telescope-file-browser.nvim"}
+    use {'nvim-tree/nvim-tree.lua'}
+    use {
+        "catppuccin/nvim",
+        as = "catppuccin"
+    }
+    -- Packer
+    use {
+        "folke/noice.nvim",
+        requires = { -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+        "MunifTanjim/nui.nvim", -- OPTIONAL:
+        --   `nvim-notify` is only needed, if you want to use the notification view.
+        --   If not available, we use `mini` as the fallback
+        "rcarriga/nvim-notify"}
+    }
+    use {'numToStr/Comment.nvim'}
+    use {"folke/zen-mode.nvim"}
+
+end)
