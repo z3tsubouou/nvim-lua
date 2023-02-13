@@ -17,4 +17,6 @@ require('_comment')
 require('_zen-mode')
 require('_prettier')
 require('_null-ls')
+require('_gitsigns')
+require('_git')
 
