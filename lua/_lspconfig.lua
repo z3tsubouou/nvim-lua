@@ -24,8 +24,8 @@ local on_attach = function(client, bufnr)
     }
     --  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
     --  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-    vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-    vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
+    vim.keymap.set('n', 'gK', vim.lsp.buf.hover, bufopts)
+    -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
     vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
     vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
@@ -59,8 +59,20 @@ require('lspconfig')['rust_analyzer'].setup {
         ["rust-analyzer"] = {}
     }
 }
-require'lspconfig'.svelte.setup {}
-require'lspconfig'.tailwindcss.setup{}
-require'lspconfig'.dockerls.setup{}
-require'lspconfig'.bashls.setup{}
+require'lspconfig'.svelte.setup {
+    on_attach = on_attach,
+    flags = lsp_flags
+}
+require'lspconfig'.tailwindcss.setup{
+    on_attach = on_attach,
+    flags = lsp_flags
+}
+require'lspconfig'.dockerls.setup{
+    on_attach = on_attach,
+    flags = lsp_flags
+}
+require'lspconfig'.bashls.setup{
+    on_attach = on_attach,
+    flags = lsp_flags
+}
 
