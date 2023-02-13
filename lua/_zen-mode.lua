@@ -3,6 +3,6 @@ require("zen-mode").setup {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
     window = {
-        width = .85 -- width will be 85% of the editor width
+        width = .65 -- width will be 65% of the editor width
     }
 }

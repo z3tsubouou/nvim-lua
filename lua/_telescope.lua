@@ -43,6 +43,7 @@ require("telescope").setup {
 }
 
 require("telescope").load_extension("file_browser")
+require("telescope").load_extension("noice")
 
 vim.keymap.set('n', ';p', builtin.find_files, {})
 vim.keymap.set('n', ';f', builtin.live_grep, {})
