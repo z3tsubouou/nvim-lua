@@ -16,8 +16,26 @@ require("telescope").setup {
             }
         }
     },
+    pickers = {
+      find_files = {
+        theme = "dropdown",
+      },
+      live_grep = {
+        theme = "dropdown",
+      },
+      buffers = {
+        theme = "dropdown"
+      },
+      help_tags = {
+        theme = "dropdown"
+      },
+      resume = {
+        theme = "dropdown"
+      },
+    },
     extensions = {
         file_browser = {
+            hidden = true,
             theme = "dropdown",
             -- disables netrw and use telescope-file-browser in its place
             hijack_netrw = true,

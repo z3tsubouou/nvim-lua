@@ -22,4 +22,6 @@ require('_null-ls')
 require('_gitsigns')
 require('_git')
 require('_impatient')
+require('_lightbulb')
+require('_notify')
 

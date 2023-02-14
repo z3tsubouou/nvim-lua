@@ -41,8 +41,9 @@ return require('packer').startup(function(use)
         "MunifTanjim/nui.nvim", -- OPTIONAL:
         --   `nvim-notify` is only needed, if you want to use the notification view.
         --   If not available, we use `mini` as the fallback
-        "rcarriga/nvim-notify"}
+        }
     }
+    use {"rcarriga/nvim-notify"}
     use {'numToStr/Comment.nvim'}
     use {"folke/zen-mode.nvim"}
     use('jose-elias-alvarez/null-ls.nvim')
@@ -56,4 +57,8 @@ return require('packer').startup(function(use)
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
     use 'lewis6991/impatient.nvim'
+    use {
+        'kosayoda/nvim-lightbulb',
+        requires = 'antoinemadec/FixCursorHold.nvim',
+    }
 end)

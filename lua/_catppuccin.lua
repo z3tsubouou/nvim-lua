@@ -2,15 +2,15 @@ require("catppuccin").setup({
     flavour = "macchiato", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "latte",
-        dark = "mocha"
+        dark = "frappe"
     },
-    transparent_background = false,
+    transparent_background = true,
     show_end_of_buffer = false, -- show the '~' characters after the end of buffers
     term_colors = false,
     dim_inactive = {
         enabled = false,
         shade = "dark",
-        percentage = 0.15
+        percentage = 0.9
     },
     no_italic = false, -- Force no italic
     no_bold = false, -- Force no bold
@@ -35,8 +35,11 @@ require("catppuccin").setup({
         gitsigns = true,
         nvimtree = true,
         telescope = true,
-        notify = false,
-        mini = false
+        notify = true,
+        mini = true,
+        lsp_saga = true,
+        noice = true,
+        treesitter = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     }
 })
