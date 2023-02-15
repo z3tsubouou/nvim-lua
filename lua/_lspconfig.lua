@@ -75,4 +75,12 @@ require'lspconfig'.bashls.setup{
     on_attach = on_attach,
     flags = lsp_flags
 }
+require'lspconfig'.terraform_lsp.setup{
+    on_attach = on_attach,
+    flags = lsp_flags
+}
+require'lspconfig'.ltex.setup{
+    on_attach = on_attach,
+    flags = lsp_flags
+}
 
