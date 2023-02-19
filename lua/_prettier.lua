@@ -29,7 +29,8 @@ prettier.setup {
     "typescript",
     "typescriptreact",
     "yaml",
-    "lua"
+    "lua",
+    "svelte"
   },
   cli_options = {
     arrow_parens = "always",
