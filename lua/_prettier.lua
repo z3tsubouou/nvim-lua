@@ -33,6 +33,7 @@ prettier.setup {
     "svelte"
   },
   cli_options = {
+    config_precedence = "prefer-file", -- or "cli-override" or "file-override",
     arrow_parens = "always",
     bracket_spacing = true,
     bracket_same_line = false,
@@ -47,7 +48,7 @@ prettier.setup {
     semi = true,
     single_attribute_per_line = false,
     single_quote = false,
-    tab_width = 2,
+    tab_width = 4,
     trailing_comma = "es5",
     use_tabs = false,
     vue_indent_script_and_style = false,

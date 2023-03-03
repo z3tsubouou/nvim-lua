@@ -24,4 +24,6 @@ require('_git')
 require('_impatient')
 require('_lightbulb')
 require('_notify')
+require('_package-info')
+require('_startup')
 

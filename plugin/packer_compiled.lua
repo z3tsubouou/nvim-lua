@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["package-info.nvim"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/package-info.nvim",
+    url = "https://github.com/vuki656/package-info.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/packer.nvim",

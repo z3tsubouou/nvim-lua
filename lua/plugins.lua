@@ -61,4 +61,12 @@ return require('packer').startup(function(use)
         'kosayoda/nvim-lightbulb',
         requires = 'antoinemadec/FixCursorHold.nvim',
     }
+    use({
+        "vuki656/package-info.nvim",
+        requires = "MunifTanjim/nui.nvim",
+    })
+    use {
+      "startup-nvim/startup.nvim",
+      requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    }
 end)
