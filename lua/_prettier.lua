@@ -30,7 +30,9 @@ prettier.setup {
     "typescriptreact",
     "yaml",
     "lua",
-    "svelte"
+    "svelte",
+    "rustfmt",
+    "toml"
   },
   cli_options = {
     config_precedence = "prefer-file", -- or "cli-override" or "file-override",

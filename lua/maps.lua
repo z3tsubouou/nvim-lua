@@ -31,8 +31,8 @@ keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- move line
-keymap.set('n', 'K', '<Cmd>:m +1<CR>')
-keymap.set('n', 'J', '<Cmd>:m -2<CR>')
+keymap.set('n', 'J', '<Cmd>:m +1<CR>')
+keymap.set('n', 'K', '<Cmd>:m -2<CR>')
 
 -- noh
 -- keymap.set('n', 'noh', '<Cmd>:noh<CR>')
