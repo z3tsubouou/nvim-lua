@@ -1,2 +1,1 @@
 require('package-info').setup()
-
