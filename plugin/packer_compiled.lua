@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
@@ -148,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["noice.nvim"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/noice.nvim",
-    url = "https://github.com/folke/noice.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -223,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
+  ["startup.nvim"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/startup.nvim",
+    url = "https://github.com/startup-nvim/startup.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,

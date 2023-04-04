@@ -6,7 +6,6 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'       -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp'     -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp'         -- Completion
-  use "lukas-reineke/indent-blankline.nvim"
   use 'glepnir/lspsaga.nvim'     -- LSP UIs
   use 'nvim-tree/nvim-web-devicons'
   use 'L3MON4D3/LuaSnip'
@@ -33,15 +32,6 @@ return require('packer').startup(function(use)
   use {
     "catppuccin/nvim",
     as = "catppuccin"
-  }
-  -- Packer
-  use {
-    "folke/noice.nvim",
-    requires = {                -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-      "MunifTanjim/nui.nvim",   -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
-    }
   }
   use { "rcarriga/nvim-notify" }
   use { 'numToStr/Comment.nvim' }
