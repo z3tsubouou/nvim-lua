@@ -1,26 +1,17 @@
 require('base')
+require('highlights')
 require('maps')
 require('plugins')
-require('_mason')
-require('_autopairs')
-require('_ts-autotag')
-require('_lspconfig')
-require('_lualine')
-require('_lspkind')
-require('_telescope')
-require('_nvim-tree')
-require('_catppuccin')
-require('_cmp')
-require('_lspsaga')
-require('_treesitter')
-require('_comment')
-require('_zen-mode')
-require('_prettier')
-require('_null-ls')
-require('_gitsigns')
-require('_git')
-require('_impatient')
-require('_lightbulb')
-require('_notify')
-require('_package-info')
-require('_startup')
+
+local has = function(x)
+  return vim.fn.has(x) == 1
+end
+local is_mac = has "macunix"
+local is_win = has "win32"
+
+if is_mac then
+  require('macos')
+end
+if is_win then
+  require('windows')
+end

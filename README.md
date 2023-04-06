@@ -1,1 +1,1 @@
-# nvim-lua2
+uses packer manager

@@ -1,19 +1,19 @@
-require('lspkind').init({
-  -- DEPRECATED (use mode instead): enables text annotations
+local status, lspkind = pcall(require, "lspkind")
+if (not status) then return end
+
+lspkind.init({
+  -- enables text annotations
   --
   -- default: true
-  -- with_text = true,
+  mode = 'symbol',
 
-  -- defines how annotations are shown
-  -- default: symbol
-  -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
-  mode = 'symbol_text',
   -- default symbol map
   -- can be either 'default' (requires nerd-fonts font) or
   -- 'codicons' for codicon preset (requires vscode-codicons font)
   --
   -- default: 'default'
   preset = 'codicons',
+
   -- override preset symbols
   --
   -- default: {}
@@ -28,9 +28,9 @@ require('lspkind').init({
     Interface = "",
     Module = "",
     Property = "ﰠ",
-    Unit = "塞",
+    Unit = "塞",
     Value = "",
-    Enum = "",
+    Enum = "",
     Keyword = "",
     Snippet = "",
     Color = "",
@@ -39,9 +39,9 @@ require('lspkind').init({
     Folder = "",
     EnumMember = "",
     Constant = "",
-    Struct = "פּ",
+    Struct = "פּ",
     Event = "",
     Operator = "",
-    TypeParameter = ""
-  }
+    TypeParameter = ""
+  },
 })

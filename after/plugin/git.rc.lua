@@ -9,4 +9,3 @@ git.setup({
     browse = "<Leader>go",
   }
 })
-

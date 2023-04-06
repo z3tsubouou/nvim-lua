@@ -79,20 +79,10 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["FixCursorHold.nvim"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
-    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  catppuccin = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -104,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   ["git.nvim"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/git.nvim",
@@ -113,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  ["impatient.nvim"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/impatient.nvim",
-    url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -134,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -144,10 +139,15 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nui.nvim"] = {
+  ["material.nvim"] = {
     loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nui.nvim",
-    url = "https://github.com/MunifTanjim/nui.nvim"
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
+  },
+  ["neosolarized.nvim"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+    url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -159,25 +159,25 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-bufferline.lua"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
+    url = "https://github.com/akinsho/nvim-bufferline.lua"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-lightbulb"] = {
+  ["nvim-colorizer.lua"] = {
     loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
-    url = "https://github.com/kosayoda/nvim-lightbulb"
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -192,12 +192,7 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["package-info.nvim"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/package-info.nvim",
-    url = "https://github.com/vuki656/package-info.nvim"
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -214,11 +209,6 @@ _G.packer_plugins = {
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
-  ["startup.nvim"] = {
-    loaded = true,
-    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/startup.nvim",
-    url = "https://github.com/startup-nvim/startup.nvim"
-  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
@@ -228,6 +218,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/delucif/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["zen-mode.nvim"] = {
     loaded = true,
