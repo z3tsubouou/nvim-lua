@@ -12,7 +12,8 @@ ts.setup {
     enable = true,
     disable = {}
   },
-  ensure_installed = { "tsx", "toml", "php", "json", "yaml", "swift", "css", "html", "lua", "svelte", "lua" },
+  ensure_installed = { "tsx", "toml", "php", "json", "yaml", "swift", "css", "html", "lua", "svelte", "lua",
+    'typescript', 'javascript' },
   autotag = {
     enable = true
   }
