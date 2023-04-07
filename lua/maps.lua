@@ -39,3 +39,5 @@ keymap.set('n', 'K', '<Cmd>:m -2<CR>')
 
 -- noh
 -- keymap.set('n', 'noh', '<Cmd>:noh<CR>')
+keymap.set("n", "gob", "<C-O>")
+keymap.set("n", "gon", "<Tab>")

@@ -58,7 +58,7 @@ local on_attach = function(client, bufnr)
 
   -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-  -- vim.keymap.set('n', 'gK', vim.lsp.buf.hover, bufopts)
+  vim.keymap.set('n', 'gk', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
@@ -69,7 +69,7 @@ local on_attach = function(client, bufnr)
   -- end, bufopts)
   -- vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
   -- vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-  -- vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
+  vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', '<space>f', function()
     vim.lsp.buf.format {
       async = true
@@ -93,7 +93,11 @@ require('lspconfig').rust_analyzer.setup {
   capabilities = capabilities,
   -- Server-specific settings...
   settings = {
-    ["rust-analyzer"] = {}
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = false,
+      }
+    }
   }
 }
 require 'lspconfig'.svelte.setup {
@@ -132,7 +136,6 @@ require 'lspconfig'.lua_ls.setup {
         -- Get the language server to recognize the `vim` global
         globals = { 'vim' },
       },
-
       workspace = {
         -- Make the server aware of Neovim runtime files
         library = vim.api.nvim_get_runtime_file("", true),
@@ -141,4 +144,3 @@ require 'lspconfig'.lua_ls.setup {
     },
   },
 }
-
