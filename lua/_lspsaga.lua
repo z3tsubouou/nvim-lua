@@ -11,6 +11,13 @@ saga.setup({
       normal_bg = '#002b36'
     }
   },
+  lightbulb = {
+    enable = false,
+    enable_in_insert = false,
+    sign = false,
+    sign_priority = 40,
+    virtual_text = false,
+  },
   dependencies = { { "nvim-tree/nvim-web-devicons" } }
 })
 
