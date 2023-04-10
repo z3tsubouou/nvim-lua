@@ -20,6 +20,7 @@ keymap.set('n', 'tb', 'gT')
 -- Split window
 keymap.set('n', 'sd', ':split<Return><C-w>w')
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
+
 -- Move window
 keymap.set('n', '<Space>', '<C-w>w')
 keymap.set('', 'sh', '<C-w>h')
@@ -28,10 +29,10 @@ keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<C-w><left>', '<C-w><')
-keymap.set('n', '<C-w><right>', '<C-w>>')
-keymap.set('n', '<C-w><up>', '<C-w>+')
-keymap.set('n', '<C-w><down>', '<C-w>-')
+-- keymap.set('n', '<C-w><left>', '<C-w><')
+-- keymap.set('n', '<C-w><right>', '<C-w>>')
+-- keymap.set('n', '<C-w><up>', '<C-w>+')
+-- keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- move line
 keymap.set('n', 'J', '<Cmd>:m +1<CR>')

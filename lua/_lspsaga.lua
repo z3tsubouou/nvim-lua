@@ -4,13 +4,6 @@ if (not status) then
 end
 
 saga.setup({
-  ui = {
-    winblend = 10,
-    border = 'rounded',
-    colors = {
-      normal_bg = '#002b36'
-    }
-  },
   lightbulb = {
     enable = false,
     enable_in_insert = false,
