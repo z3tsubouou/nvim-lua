@@ -1,1 +1,1 @@
-# nvim-lua2
+# nvim-lua
