@@ -9,7 +9,8 @@ end
 
 require("telescope").setup {
   defaults = {
-    file_ignore_patterns = { "node_modules", "build", "dist", ".git/" },
+    file_ignore_patterns = { "node_modules", "build", "dist", ".git/", "public/static/charting_library",
+      "public/static/datafeeds" },
     mappings = {
       n = {
         ["q"] = actions.close
