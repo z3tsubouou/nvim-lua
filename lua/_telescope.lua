@@ -18,25 +18,25 @@ require("telescope").setup {
   },
   pickers = {
     find_files = {
-      theme = "dropdown",
+      theme = "ivy",
     },
     live_grep = {
-      theme = "dropdown",
+      theme = "ivy",
     },
     buffers = {
-      theme = "dropdown"
+      theme = "ivy"
     },
     help_tags = {
-      theme = "dropdown"
+      theme = "ivy"
     },
     resume = {
-      theme = "dropdown"
+      theme = "ivy"
     },
   },
   extensions = {
     file_browser = {
       hidden = true,
-      theme = "dropdown",
+      theme = "ivy",
       -- disables netrw and use telescope-file-browser in its place
       hijack_netrw = true,
       mappings = {
@@ -75,10 +75,10 @@ vim.keymap.set("n", ";e", function()
     respect_gitignore = false,
     hidden = true,
     grouped = true,
-    previewer = false,
+    -- previewer = false,
     initial_mode = "normal",
-    layout_config = {
-      height = 40
-    }
+    -- layout_config = {
+    --   height = 40
+    -- }
   })
 end)
