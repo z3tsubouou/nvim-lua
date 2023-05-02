@@ -21,10 +21,10 @@ local opts = {
 
 -- vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
 -- vim.keymap.set('n', '<C-k>', '<Cmd>Lspsaga diagnostic_jump_prev<CR>', opts)
--- vim.keymap.set('n', 'gk', '<Cmd>Lspsaga hover_doc<CR>', opts)
+vim.keymap.set('n', 'gk', '<Cmd>Lspsaga hover_doc<CR>', opts)
 -- Error: start_col end_col gej aldaa garch baigaa
--- vim.keymap.set('n', 'gD', '<Cmd>Lspsaga lsp_finder<CR>', opts)
--- vim.keymap.set('n', 'gca', '<Cmd>Lspsaga code_action<CR>', opts)
+vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', opts)
+vim.keymap.set('n', '<space>ca', '<Cmd>Lspsaga code_action<CR>', opts)
 vim.keymap.set('n', '<space>tt', '<Cmd>Lspsaga term_toggle<CR>', opts)
 vim.keymap.set('n', '<space>ol', '<Cmd>Lspsaga outline<CR>', opts)
 -- vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<CR>', opts)
