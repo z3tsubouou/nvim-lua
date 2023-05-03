@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   use { 'williamboman/mason.nvim' }
   use { 'williamboman/mason-lspconfig.nvim' }
   use { 'lewis6991/impatient.nvim' }
+  use { 'norcalli/nvim-colorizer.lua' }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
