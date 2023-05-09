@@ -30,6 +30,18 @@ require("telescope").setup {
     help_tags = {
       theme = "ivy"
     },
+    diagnostics = {
+      theme = "ivy"
+    },
+    command_history = {
+      theme = "ivy"
+    },
+    keymaps = {
+      theme = "ivy"
+    },
+    treesitter = {
+      theme = "ivy"
+    },
     resume = {
       theme = "ivy"
     },
@@ -50,6 +62,7 @@ require("telescope").setup {
         ["n"] = {
           -- your custom normal mode mappings
           ["R"] = fb_actions.rename,
+          ["M"] = fb_actions.move,
           ["N"] = fb_actions.create,
           ["D"] = fb_actions.remove,
           ["h"] = fb_actions.goto_parent_dir,
@@ -68,6 +81,10 @@ vim.keymap.set('n', ';p', builtin.find_files, {})
 vim.keymap.set('n', ';f', builtin.live_grep, {})
 vim.keymap.set('n', ';b', builtin.buffers, {})
 vim.keymap.set('n', ';h', builtin.help_tags, {})
+vim.keymap.set('n', ';d', builtin.diagnostics, {})
+vim.keymap.set('n', ';ch', builtin.command_history, {})
+vim.keymap.set('n', ';km', builtin.keymaps, {})
+vim.keymap.set('n', ';ts', builtin.treesitter, {})
 vim.keymap.set('n', ';;', builtin.resume, {})
 
 vim.keymap.set("n", ";e", function()

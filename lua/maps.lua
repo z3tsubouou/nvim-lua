@@ -3,8 +3,8 @@ local keymap = vim.keymap
 keymap.set('n', 'x', '"_x')
 
 -- Increment/decrement
-keymap.set('n', '+', '<C-a>')
-keymap.set('n', '-', '<C-x>')
+keymap.set('n', '-', '<C-a>')
+keymap.set('n', '+', '<C-x>')
 
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
@@ -37,11 +37,14 @@ keymap.set('', 'sl', '<C-w>l')
 -- move line
 keymap.set('n', 'J', '<Cmd>:m +1<CR>')
 keymap.set('n', 'K', '<Cmd>:m -2<CR>')
+keymap.set("n", ">", ">>")
+keymap.set("n", "<", "<<")
 
 -- noh
 -- keymap.set('n', 'noh', '<Cmd>:noh<CR>')
 keymap.set("n", "gob", "<C-O>")
 keymap.set("n", "gon", "<Tab>")
 
-keymap.set("n", ">", ">>")
-keymap.set("n", "<", "<<")
+--change working space
+keymap.set("n", "cd", ":cd %:p:h")
+
