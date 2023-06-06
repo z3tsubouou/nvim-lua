@@ -3,9 +3,8 @@ local keymap = vim.keymap
 keymap.set('n', 'x', '"_x')
 
 -- Increment/decrement
--- idk this is working opposite way
-keymap.set('n', '-', '<C-a>')
-keymap.set('n', '+', '<C-x>')
+keymap.set('n', '+', '<C-a>')
+keymap.set('n', '-', '<C-x>')
 
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')

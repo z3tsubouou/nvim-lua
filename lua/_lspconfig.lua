@@ -77,7 +77,7 @@ local on_attach = function(client, bufnr)
   end, bufopts)
 end
 
-require'lspconfig'.jsonls.setup {
+require 'lspconfig'.jsonls.setup {
   capabilities = capabilities,
 }
 
@@ -147,6 +147,10 @@ require 'lspconfig'.lua_ls.setup {
       },
     },
   },
+}
+
+require('lspconfig').sqlls.setup {
+  on_attach = on_attach,
 }
 
 require('lspconfig').yamlls.setup {
