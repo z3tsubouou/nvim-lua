@@ -16,15 +16,11 @@ return require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim' }
   use { 'dinhhuy258/git.nvim' }
   use { 'williamboman/mason.nvim' }
-  use { 'williamboman/mason-lspconfig.nvim' }
   use { 'lewis6991/impatient.nvim' }
   use { 'norcalli/nvim-colorizer.lua' }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
-  }
-  use {
-    'nvim-tree/nvim-tree.lua'
   }
   use {
     'nvim-lualine/lualine.nvim',
@@ -39,7 +35,6 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use { "nvim-telescope/telescope-file-browser.nvim" }
-  -- use {'nvim-tree/nvim-tree.lua'}
   use {
     "catppuccin/nvim",
     as = "catppuccin"
