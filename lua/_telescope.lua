@@ -53,6 +53,9 @@ require("telescope").setup {
       override_file_sorter = true,    -- override the file sorter
       case_mode = "smart_case",       -- or "ignore_case" or "respect_case" the default case_mode is "smart_case"
     },
+    package_info = {
+      theme = "ivy",
+    },
     file_browser = {
       hidden = true,
       theme = "ivy",
@@ -83,6 +86,7 @@ require("telescope").setup {
 
 require("telescope").load_extension("file_browser")
 require('telescope').load_extension('fzf')
+require("telescope").load_extension("package_info")
 
 vim.keymap.set('n', ';p', builtin.find_files, {})
 vim.keymap.set('n', ';f', builtin.live_grep, {})
