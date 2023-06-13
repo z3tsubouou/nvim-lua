@@ -1,6 +1,7 @@
 local keymap = vim.keymap
 
 keymap.set('n', 'x', '"_x')
+keymap.set("n", "<space>x", "<Cmd>:wq<CR>")
 
 -- Increment/decrement
 keymap.set('n', '+', '<C-a>')
@@ -47,4 +48,8 @@ keymap.set("n", "gon", "<Tab>")
 
 --change working space
 keymap.set("n", "cd", ":cd %:p:h")
+
+--terminal
+keymap.set("n", "<leader>t", ":split<Return><C-w>w<Cmd>:resize 15<CR><Cmd>:term<CR>")
+keymap.set("t", "<leader>x", "<C-\\><C-n>")
 
