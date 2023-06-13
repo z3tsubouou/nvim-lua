@@ -16,7 +16,6 @@ return require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim' }
   use { 'dinhhuy258/git.nvim' }
   use { 'williamboman/mason.nvim' }
-  use { 'lewis6991/impatient.nvim' }
   use { 'norcalli/nvim-colorizer.lua' }
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -41,6 +40,10 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use { "nvim-telescope/telescope-file-browser.nvim" }
+  use { 'nvim-telescope/telescope-fzf-native.nvim',
+    run =
+    'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+  }
   use {
     "catppuccin/nvim",
     as = "catppuccin"

@@ -49,3 +49,6 @@ vim.opt.formatoptions:append { 'r' }
 
 -- copy
 vim.opt.clipboard = 'unnamed'
+
+-- cache start
+vim.loader.enable()
