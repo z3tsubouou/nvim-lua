@@ -29,10 +29,10 @@ keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
 -- Resize window
--- keymap.set('n', '<C-w><left>', '<C-w><')
--- keymap.set('n', '<C-w><right>', '<C-w>>')
--- keymap.set('n', '<C-w><up>', '<C-w>+')
--- keymap.set('n', '<C-w><down>', '<C-w>-')
+keymap.set('n', '<C-l>', '<C-w><')
+keymap.set('n', '<C-h>', '<C-w>>')
+keymap.set('n', '<C-k>', '<C-w>+')
+keymap.set('n', '<C-j>', '<C-w>-')
 
 -- move line
 keymap.set('n', 'J', '<Cmd>:m +1<CR>')
