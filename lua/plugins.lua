@@ -15,8 +15,8 @@ return require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim' }
   use { 'dinhhuy258/git.nvim' }
   use { 'williamboman/mason.nvim' }
-  use { 'williamboman/mason-lspconfig.nvim' }
   use { 'norcalli/nvim-colorizer.lua' }
+  use { 'mfussenegger/nvim-lint' }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'

@@ -18,4 +18,5 @@ require('_package-info')
 require('_startup')
 require('_colorizer')
 require('_nvim-tree')
+require('_nvim-lint')
 
