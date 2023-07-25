@@ -23,12 +23,12 @@ keymap.set('n', 'sd', ':split<Return><C-w>w')
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Move window
-keymap.set('n', '<Space>', '<C-w>w')
-keymap.set('', 'sh', '<C-w>h')
-keymap.set('', 'sk', '<C-w>k')
-keymap.set('', 'sj', '<C-w>j')
-keymap.set('', 'sl', '<C-w>l')
-
+-- keymap.set('n', '<Space>', '<C-w>w')
+-- keymap.set('', 'sh', '<C-w>h')
+-- keymap.set('', 'sk', '<C-w>k')
+-- keymap.set('', 'sj', '<C-w>j')
+-- keymap.set('', 'sl', '<C-w>l')
+--
 -- Resize window
 keymap.set('n', '<C-l>', '<C-w><')
 keymap.set('n', '<C-h>', '<C-w>>')

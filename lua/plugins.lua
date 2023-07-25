@@ -12,10 +12,10 @@ return require('packer').startup(function(use)
   use { 'windwp/nvim-autopairs' }
   use { 'windwp/nvim-ts-autotag' }
   use { 'numToStr/Comment.nvim' }
-  use { 'jose-elias-alvarez/null-ls.nvim' }
   use { 'lewis6991/gitsigns.nvim' }
   use { 'dinhhuy258/git.nvim' }
   use { 'williamboman/mason.nvim' }
+  use { 'williamboman/mason-lspconfig.nvim' }
   use { 'norcalli/nvim-colorizer.lua' }
   use {
     'nvim-treesitter/nvim-treesitter',
