@@ -77,9 +77,6 @@ local on_attach = function(client, bufnr)
   end, bufopts)
 end
 
-require 'lspconfig'.jsonls.setup {
-  capabilities = capabilities,
-}
 
 require('lspconfig').pyright.setup {
   on_attach = on_attach,
@@ -128,6 +125,11 @@ require 'lspconfig'.terraformls.setup {
   capabilities = capabilities
 }
 
+require('lspconfig').gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 require 'lspconfig'.lua_ls.setup {
   capabilities = capabilities,
   on_attach = function(client, bufnr)
@@ -146,6 +148,10 @@ require 'lspconfig'.lua_ls.setup {
       },
     },
   },
+}
+
+require 'lspconfig'.jsonls.setup {
+  on_attach = on_attach,
 }
 
 require('lspconfig').sqlls.setup {

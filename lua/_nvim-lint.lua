@@ -1,7 +1,9 @@
 require('lint').linters_by_ft = {
   markdown = { 'vale' },
   typescript = { 'eslint_d' },
-  typescriptreact = { 'eslint_d' }
+  typescriptreact = { 'eslint_d' },
+  svelte = { 'eslint_d' },
+  go = { 'golangcilint' },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
