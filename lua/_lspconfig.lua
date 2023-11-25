@@ -78,7 +78,7 @@ local on_attach = function(client, bufnr)
 end
 
 
-require('lspconfig').pyright.setup {
+require('lspconfig').pylsp.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }

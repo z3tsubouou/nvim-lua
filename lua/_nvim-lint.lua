@@ -4,6 +4,7 @@ require('lint').linters_by_ft = {
   typescriptreact = { 'eslint_d' },
   svelte = { 'eslint_d' },
   go = { 'golangcilint' },
+  python = { 'pylint' }
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
