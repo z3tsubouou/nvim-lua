@@ -19,7 +19,7 @@ return {
         desc = "Find Plugin File",
       },
       {
-        ";f",
+        ";e",
         function()
           local builtin = require("telescope.builtin")
           builtin.find_files({
@@ -30,7 +30,7 @@ return {
         desc = "Lists files in your current working directory, respects .gitignore",
       },
       {
-        ";r",
+        ";f",
         function()
           local builtin = require("telescope.builtin")
           builtin.live_grep()
@@ -62,7 +62,7 @@ return {
         desc = "Resume the previous telescope picker",
       },
       {
-        ";e",
+        ";d",
         function()
           local builtin = require("telescope.builtin")
           builtin.diagnostics()

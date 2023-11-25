@@ -40,8 +40,8 @@ keymap.set("n", "<C-k>", "<C-w>+")
 keymap.set("n", "<C-j>", "<C-w>-")
 
 -- move line
-keymap.set("n", "J", "<Cmd>:m +1<CR>")
-keymap.set("n", "K", "<Cmd>:m -2<CR>")
+-- keymap.set("n", "J", "<Cmd>:m +1<CR>")
+-- keymap.set("n", "K", "<Cmd>:m -2<CR>")
 keymap.set("n", ">", ">>")
 keymap.set("n", "<", "<<")
 
@@ -56,4 +56,3 @@ keymap.set("n", "cd", ":cd %:p:h")
 --terminal
 -- keymap.set("n", "<leader>t", ":split<Return><C-w>w<Cmd>:resize 15<CR><Cmd>:term<CR>")
 -- keymap.set("t", "<leader>x", "<C-\\><C-n>")
-
