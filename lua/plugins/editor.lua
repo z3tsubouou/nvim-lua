@@ -19,7 +19,7 @@ return {
         desc = "Find Plugin File",
       },
       {
-        ";e",
+        ";p",
         function()
           local builtin = require("telescope.builtin")
           builtin.find_files({
