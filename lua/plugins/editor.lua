@@ -172,4 +172,38 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
+
+  {
+    "dinhhuy258/git.nvim",
+    event = "BufReadPre",
+    opts = {
+      keymaps = {
+        -- Open blame window
+        blame = "<Leader>gb",
+        -- Open file/folder in git repository
+        browse = "<Leader>go",
+        -- Opens a new diff that compares against the current index
+        diff = "<Leader>gd",
+        -- Close git diff
+        diff_close = "<Leader>gD",
+      },
+    },
+  },
+  {
+    "folke/todo-comments.nvim",
+    opts = {
+      search = {
+        command = "rg",
+        args = {
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--glob=!node_modules",
+        },
+        pattern = [[\b(KEYWORDS):]],
+      },
+    },
+  },
 }
