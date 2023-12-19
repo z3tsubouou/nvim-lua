@@ -56,3 +56,5 @@ keymap.set("n", "cd", ":cd %:p:h")
 --terminal
 -- keymap.set("n", "<leader>t", ":split<Return><C-w>w<Cmd>:resize 15<CR><Cmd>:term<CR>")
 -- keymap.set("t", "<leader>x", "<C-\\><C-n>")
+keymap.set("n", "<A-j>", "")
+keymap.set("n", "<A-k>", "")
