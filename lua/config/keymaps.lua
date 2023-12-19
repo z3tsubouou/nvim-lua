@@ -23,8 +23,8 @@ keymap.set("n", "te", "<Cmd>tabedit<CR>")
 -- keymap.set('n', 'tb', 'gT')
 
 -- Split window
-keymap.set("n", "sd", ":split<Return><C-w>w")
-keymap.set("n", "sv", ":vsplit<Return><C-w>w")
+keymap.set("n", "sd", ":split<Return>")
+keymap.set("n", "sv", ":vsplit<Return>")
 
 -- Move window
 -- keymap.set('n', '<Space>', '<C-w>w')
