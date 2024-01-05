@@ -139,6 +139,9 @@ return {
         live_grep = {
           theme = "ivy",
         },
+        old_files = {
+          theme = "ivy",
+        },
         buffers = {
           theme = "ivy",
         },
