@@ -78,7 +78,7 @@ return {
         desc = "Lists Function names, variables, from Treesitter",
       },
       {
-        "sf",
+        ";b",
         function()
           local telescope = require("telescope")
 
@@ -92,7 +92,7 @@ return {
             respect_gitignore = false,
             hidden = true,
             grouped = true,
-            previewer = false,
+            previewer = true,
             initial_mode = "normal",
             -- layout_config = { height = 40 },
           })
@@ -122,57 +122,41 @@ return {
         sorting_strategy = "ascending",
         winblend = 0,
         mappings = {
-          n = {},
+          i = {
+            ["<c-t>"] = function(bufnr)
+              actions.select_tab(bufnr)
+            end,
+            ["<C-t>"] = function(bufnr)
+              actions.select_tab(bufnr)
+            end,
+          },
+          n = {
+            ["<c-t>"] = function(bufnr)
+              actions.select_tab(bufnr)
+            end,
+            ["<C-t>"] = function(bufnr)
+              actions.select_tab(bufnr)
+            end,
+          },
         },
       })
       opts.pickers = {
         diagnostics = {
-          theme = "ivy",
           initial_mode = "normal",
           layout_config = {
             preview_cutoff = 9999,
           },
         },
-        find_files = {
-          theme = "ivy",
-        },
-        live_grep = {
-          theme = "ivy",
-        },
-        old_files = {
-          theme = "ivy",
-        },
-        buffers = {
-          theme = "ivy",
-        },
-        help_tags = {
-          theme = "ivy",
-        },
-        command_history = {
-          theme = "ivy",
-        },
-        keymaps = {
-          theme = "ivy",
-        },
-        treesitter = {
-          theme = "ivy",
-        },
-        resume = {
-          theme = "ivy",
-        },
-        lsp_references = {
-          theme = "ivy",
-        },
-        lsp_definition = {
-          theme = "ivy",
-        },
       }
       opts.extensions = {
         file_browser = {
           hidden = true,
-          theme = "ivy",
           -- disables netrw and use telescope-file-browser in its place
           hijack_netrw = true,
+          previewer = true,
+          initial_mode = "normal",
+          respect_gitignore = false,
+          grouped = true,
           mappings = {
             -- your custom insert mode mappings
             ["n"] = {
@@ -194,6 +178,9 @@ return {
                 for i = 1, 10 do
                   actions.move_selection_next(prompt_bufnr)
                 end
+              end,
+              ["<C-t>"] = function(bufnr)
+                actions.select_tab(bufnr)
               end,
               ["<PageUp>"] = actions.preview_scrolling_up,
               ["<PageDown>"] = actions.preview_scrolling_down,
