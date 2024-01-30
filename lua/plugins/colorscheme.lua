@@ -4,41 +4,33 @@ return {
     "rebelot/kanagawa.nvim",
     lazy = true,
     priority = 1000,
-    config = function()
-      require("kanagawa").setup({
-        transparent = true,
-      })
-    end,
+    opts = {
+      transparent = true,
+    },
   },
   {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
-    config = function()
-      require("gruvbox").setup({
-        transparent_mode = true,
-      })
-    end,
+    opts = {
+      transparent_mode = true,
+    },
   },
   {
     "AlexvZyl/nordic.nvim",
     lazy = true,
     priority = 1000,
-    config = function()
-      require("nordic").load({
-        transparent_bg = true,
-      })
-    end,
+    opts = {
+      transparent_bg = true,
+    },
   },
   {
     "craftzdog/solarized-osaka.nvim",
     branch = "osaka",
     lazy = true,
     priority = 1000,
-    opts = function()
-      return {
-        transparent = true,
-      }
-    end,
+    opts = {
+      transparent = true,
+    },
   },
 
   {
@@ -46,14 +38,12 @@ return {
     name = "catppuccin",
     priority = 1000,
     lazy = true,
-    config = {
-      require("catppuccin").setup({
-        background = {
-          light = "frappe",
-          dark = "mocha",
-        },
-        transparent_background = true,
-      }),
+    opts = {
+      background = {
+        light = "frappe",
+        dark = "mocha",
+      },
+      transparent_background = true,
     },
   },
 
