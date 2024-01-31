@@ -31,6 +31,7 @@ return {
           builtin.find_files({
             no_ignore = false,
             hidden = true,
+            initial_mode = "insert",
           })
         end,
         desc = "Lists files in your current working directory, respects .gitignore",
@@ -39,7 +40,9 @@ return {
         ";f",
         function()
           local builtin = require("telescope.builtin")
-          builtin.live_grep()
+          builtin.live_grep({
+            initial_mode = "insert",
+          })
         end,
         desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
       },
@@ -47,7 +50,9 @@ return {
         "\\\\",
         function()
           local builtin = require("telescope.builtin")
-          builtin.buffers()
+          builtin.buffers({
+            initial_mode = "insert",
+          })
         end,
         desc = "Lists open buffers",
       },
@@ -55,7 +60,9 @@ return {
         ";t",
         function()
           local builtin = require("telescope.builtin")
-          builtin.help_tags()
+          builtin.help_tags({
+            initial_mode = "insert",
+          })
         end,
         desc = "Lists available help tags and opens a new window with the relevant help info on <cr>",
       },
@@ -63,7 +70,7 @@ return {
         ";;",
         function()
           local builtin = require("telescope.builtin")
-          builtin.resume()
+          builtin.resume({ initial_mode = "insert" })
         end,
         desc = "Resume the previous telescope picker",
       },
@@ -71,7 +78,7 @@ return {
         ";d",
         function()
           local builtin = require("telescope.builtin")
-          builtin.diagnostics()
+          builtin.diagnostics({ initial_mode = "insert" })
         end,
         desc = "Lists Diagnostics for all open buffers or a specific buffer",
       },
@@ -79,7 +86,7 @@ return {
         ";s",
         function()
           local builtin = require("telescope.builtin")
-          builtin.treesitter()
+          builtin.treesitter({ initial_mode = "insert" })
         end,
         desc = "Lists Function names, variables, from Treesitter",
       },
@@ -99,7 +106,7 @@ return {
             hidden = true,
             grouped = true,
             previewer = true,
-            initial_mode = "normal",
+            initial_mode = "insert",
             -- layout_config = { height = 40 },
           })
         end,
