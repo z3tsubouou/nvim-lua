@@ -5,7 +5,7 @@
 local keymap = vim.keymap
 
 keymap.set("n", "x", '"_x')
-keymap.set("n", "<space>x", "<Cmd>:q<CR>")
+-- keymap.set("n", "<space>x", "<Cmd>:q<CR>")
 
 -- Increment/decrement
 keymap.set("n", "+", "<C-a>")
@@ -23,8 +23,8 @@ keymap.set("n", "te", "<Cmd>tabedit<CR>")
 -- keymap.set('n', 'tb', 'gT')
 
 -- Split window
-keymap.set("n", "sd", ":split<Return>")
-keymap.set("n", "sv", ":vsplit<Return>")
+keymap.set("n", "<space>wx", ":split<Return>", { desc = "Split window below" })
+keymap.set("n", "<space>wv", ":vsplit<Return>", { desc = "Split window right" })
 
 -- Move window
 -- keymap.set('n', '<Space>', '<C-w>w')
@@ -56,5 +56,14 @@ keymap.set("n", "cd", ":cd %:p:h")
 --terminal
 -- keymap.set("n", "<leader>t", ":split<Return><C-w>w<Cmd>:resize 15<CR><Cmd>:term<CR>")
 -- keymap.set("t", "<leader>x", "<C-\\><C-n>")
+
+-- deisabled keys
 keymap.set("n", "<A-j>", "")
 keymap.set("n", "<A-k>", "")
+keymap.set("n", "<space>w-", "")
+keymap.set("n", "<space>w|", "")
+keymap.set("n", "<space>-", "")
+keymap.set("n", "<leader>|", "")
+keymap.set("n", "<leader>`", "")
+keymap.set("n", "<leader>K", "")
+keymap.set("n", "<leader><space>", "")

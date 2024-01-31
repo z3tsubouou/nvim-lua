@@ -1,6 +1,8 @@
 return {
   {
     "telescope.nvim",
+    lazy = true,
+    event = "VimEnter",
     dependencies = {
       {
         "nvim-telescope/telescope-fzf-native.nvim",
@@ -9,6 +11,10 @@ return {
       "nvim-telescope/telescope-file-browser.nvim",
     },
     keys = {
+      { "<leader><space>", nil },
+      { "<leader>,", nil },
+      { "<leader>:", nil },
+      { "<leader>/", nil },
       {
         "<leader>fP",
         function()
