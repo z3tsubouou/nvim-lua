@@ -5,7 +5,7 @@ return {
     lazy = true,
     priority = 1000,
     opts = {
-      transparent = true,
+      -- transparent = true,
     },
   },
   {
@@ -51,7 +51,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "kanagawa",
     },
   },
 }

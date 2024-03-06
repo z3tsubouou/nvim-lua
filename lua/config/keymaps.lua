@@ -57,6 +57,9 @@ keymap.set("n", "cd", ":cd %:p:h")
 -- keymap.set("n", "<leader>t", ":split<Return><C-w>w<Cmd>:resize 15<CR><Cmd>:term<CR>")
 -- keymap.set("t", "<leader>x", "<C-\\><C-n>")
 
+-- delete buffer
+keymap.set("n", "ZZ", "<Cmd>:bdelete<CR>")
+
 -- deisabled keys
 keymap.set("n", "<A-j>", "")
 keymap.set("n", "<A-k>", "")
