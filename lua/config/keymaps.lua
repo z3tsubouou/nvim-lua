@@ -25,6 +25,8 @@ keymap.set("n", "te", "<Cmd>tabedit<CR>")
 -- Split window
 keymap.set("n", "<space>wx", ":split<Return>", { desc = "Split window below" })
 keymap.set("n", "<space>wv", ":vsplit<Return>", { desc = "Split window right" })
+keymap.set("n", "<space>wn", ":cnext<Return>", { desc = "Quicklist next" })
+keymap.set("n", "<space>wp", ":cprev<Return>", { desc = "Quicklist prev" })
 
 -- Move window
 -- keymap.set('n', '<Space>', '<C-w>w')
