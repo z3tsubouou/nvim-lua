@@ -135,7 +135,7 @@ return {
           action = "Telescope find_files",
           desc = " Find file                 ",
           icon = " ",
-          key = "f",
+          key = "p",
         },
         {
           action = "Telescope file_browser",
