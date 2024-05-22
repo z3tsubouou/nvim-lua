@@ -84,7 +84,7 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        -- globalstatus = false,
+        globalstatus = true,
         -- theme = "solarized_dark",
       },
     },
@@ -97,7 +97,7 @@ return {
     priority = 1200,
     config = function()
       require("incline").setup({
-        window = { margin = { vertical = 0, horizontal = 1 } },
+        window = { margin = { vertical = 1, horizontal = 0 } },
         hide = {
           cursorline = true,
         },

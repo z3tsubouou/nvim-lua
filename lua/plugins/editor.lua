@@ -244,11 +244,17 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "L3MON4D3/LuaSnip",
+      "hrsh7th/cmp-emoji",
     },
-    opts = function()
+    event = "VeryLazy",
+    opts = function(_, opts)
+      table.insert(opts.sources, { name = "emoji" })
+
       vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
+
       local cmp = require("cmp")
       local defaults = require("cmp.config.default")()
+
       return {
         completion = {
           completeopt = "menu,menuone,noinsert",
@@ -257,6 +263,10 @@ return {
           expand = function(args)
             require("luasnip").lsp_expand(args.body)
           end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
         },
         mapping = cmp.mapping.preset.insert({
           ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
@@ -323,7 +333,7 @@ return {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     build = ":Copilot auth",
-    event = "InsertEnter",
+    event = "VeryLazy",
     config = function()
       require("copilot").setup({
         panel = {
