@@ -30,10 +30,10 @@ keymap.set("n", "<space>wp", ":cprev<Return>", { desc = "Quicklist prev" })
 
 -- Move window
 -- keymap.set('n', '<Space>', '<C-w>w')
--- keymap.set('', 'sh', '<C-w>h')
--- keymap.set('', 'sk', '<C-w>k')
--- keymap.set('', 'sj', '<C-w>j')
--- keymap.set('', 'sl', '<C-w>l')
+keymap.set("", "<space>wh", "<C-w>h")
+keymap.set("", "<space>wk", "<C-w>k")
+keymap.set("", "<space>wj", "<C-w>j")
+keymap.set("", "<space>wl", "<C-w>l")
 --
 -- Resize window
 keymap.set("n", "<C-l>", "<C-w><")

@@ -81,6 +81,7 @@ return {
   -- statusline
   {
     "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     event = "VeryLazy",
     opts = {
       options = {
@@ -153,7 +154,7 @@ return {
           action = "Telescope live_grep",
           desc = " Find text                 ",
           icon = " ",
-          key = "g",
+          key = "f",
         },
         {
           action = [[lua require("lazyvim.util").telescope.config_files()()]],
@@ -179,7 +180,7 @@ return {
           icon = "󰒲 ",
           key = "l",
         },
-        { action = "qa", desc = " Quit", icon = " ", key = "q" },
+        { action = "qa", desc = " Quit", icon = "󰩈 ", key = "q" },
       }
     end,
   },
