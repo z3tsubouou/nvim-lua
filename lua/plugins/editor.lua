@@ -206,6 +206,9 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
+  {
+    { "LintaoAmons/cd-project.nvim" },
+  },
 
   {
     "dinhhuy258/git.nvim",
