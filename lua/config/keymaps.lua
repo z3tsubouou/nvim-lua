@@ -23,17 +23,17 @@ keymap.set("n", "te", "<Cmd>tabedit<CR>")
 -- keymap.set('n', 'tb', 'gT')
 
 -- Split window
-keymap.set("n", "<space>wx", ":split<Return>", { desc = "Split window below" })
-keymap.set("n", "<space>wv", ":vsplit<Return>", { desc = "Split window right" })
-keymap.set("n", "<space>wn", ":cnext<Return>", { desc = "Quicklist next" })
-keymap.set("n", "<space>wp", ":cprev<Return>", { desc = "Quicklist prev" })
+keymap.set("n", "<leader>wx", "<cmd>split<cr>", { desc = "Split window below" })
+keymap.set("n", "<leader>wv", "<cmd>vsplit<cr>", { desc = "Split window right" })
+keymap.set("n", "<leader>wn", "<cmd>cnext<cr>", { desc = "Quicklist next" })
+keymap.set("n", "<leader>wp", "<cmd>cprev<cr>", { desc = "Quicklist prev" })
 
 -- Move window
--- keymap.set('n', '<Space>', '<C-w>w')
-keymap.set("", "<space>wh", "<C-w>h")
-keymap.set("", "<space>wk", "<C-w>k")
-keymap.set("", "<space>wj", "<C-w>j")
-keymap.set("", "<space>wl", "<C-w>l")
+-- keymap.set('n', '<leader>', '<C-w>w')
+keymap.set("", "<leader>wh", "<C-w>h")
+keymap.set("", "<leader>wk", "<C-w>k")
+keymap.set("", "<leader>wj", "<C-w>j")
+keymap.set("", "<leader>wl", "<C-w>l")
 --
 -- Resize window
 keymap.set("n", "<C-l>", "<C-w><")

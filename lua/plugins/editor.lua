@@ -209,7 +209,6 @@ return {
   {
     { "LintaoAmons/cd-project.nvim" },
   },
-
   {
     "dinhhuy258/git.nvim",
     event = "BufReadPre",
