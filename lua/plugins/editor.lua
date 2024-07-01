@@ -430,6 +430,13 @@ return {
           end,
           desc = "Harpoon prev",
         },
+        {
+          "<leader>hp",
+          function()
+            require("harpoon"):list():remove()
+          end,
+          desc = "Harpoon prev",
+        },
       }
 
       for i = 1, 5 do
@@ -437,6 +444,13 @@ return {
           "<leader>h" .. i,
           function()
             require("harpoon"):list():select(i)
+          end,
+          desc = "Harpoon to File " .. i,
+        })
+        table.insert(keys, {
+          "<leader>hd" .. i,
+          function()
+            require("harpoon"):list():remove_at(i)
           end,
           desc = "Harpoon to File " .. i,
         })
