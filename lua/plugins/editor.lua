@@ -431,11 +431,11 @@ return {
           desc = "Harpoon prev",
         },
         {
-          "<leader>hp",
+          "<leader>hdd",
           function()
             require("harpoon"):list():remove()
           end,
-          desc = "Harpoon prev",
+          desc = "Harpoon delete",
         },
       }
 
@@ -452,7 +452,7 @@ return {
           function()
             require("harpoon"):list():remove_at(i)
           end,
-          desc = "Harpoon to File " .. i,
+          desc = "Harpoon delete file " .. i,
         })
       end
       return keys
