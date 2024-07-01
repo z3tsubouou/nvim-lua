@@ -416,6 +416,20 @@ return {
           end,
           desc = "Harpoon Quick Menu",
         },
+        {
+          "<leader>hn",
+          function()
+            require("harpoon"):list():next()
+          end,
+          desc = "Harpoon next",
+        },
+        {
+          "<leader>hp",
+          function()
+            require("harpoon"):list():prev()
+          end,
+          desc = "Harpoon prev",
+        },
       }
 
       for i = 1, 5 do
