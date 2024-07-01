@@ -26,8 +26,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.toml" },
     { import = "lazyvim.plugins.extras.lang.svelte" },
 
-    { import = "lazyvim.plugins.extras.formatting.black" },
-
     { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
 
