@@ -53,7 +53,7 @@ keymap.set("n", "gob", "<C-O>")
 keymap.set("n", "gon", "<Tab>")
 
 --change working space
-keymap.set("n", "cd", ":cd %:p:h")
+-- keymap.set("n", "cd", ":cd %:p:h")
 
 --terminal
 -- keymap.set("n", "<leader>t", ":split<Return><C-w>w<Cmd>:resize 15<CR><Cmd>:term<CR>")
