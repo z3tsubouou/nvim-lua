@@ -18,7 +18,8 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 -- vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
 -- New tab
-keymap.set("n", "te", "<Cmd>tabedit<CR>")
+keymap.set("n", "te", "<Cmd>tabnew +term<CR>")
+keymap.set("n", "tn", "<Cmd>term<CR>")
 -- keymap.set('n', 'tn', 'gt')
 -- keymap.set('n', 'tb', 'gT')
 
