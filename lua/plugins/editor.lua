@@ -259,6 +259,9 @@ return {
 
       return {
         completion = {
+          autocomplete = {
+            cmp.TriggerEvent.TextChanged,
+          },
           completeopt = "menu,menuone,noinsert",
         },
         snippet = {
@@ -288,9 +291,12 @@ return {
           end,
         }),
         sources = cmp.config.sources({
-          { name = "nvim_lsp" },
+          { name = "copilot", keyword_length = 0 },
           { name = "luasnip" },
+          { name = "nvim_lsp" },
+          { name = "buffer" },
           { name = "path" },
+          { name = "dap" },
         }, {
           { name = "buffer" },
         }),
@@ -354,7 +360,7 @@ return {
           },
         },
         suggestion = {
-          enabled = true,
+          enabled = false,
           auto_trigger = true,
           debounce = 75,
           keymap = {
