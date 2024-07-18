@@ -120,7 +120,6 @@ return {
       table.insert(opts.sources, { name = "nvim_lsp", priority = 9, keyword_length = 1 })
       table.insert(opts.sources, { name = "buffer", priority = 8, keyword_length = 3 })
       table.insert(opts.sources, { name = "luasnip", priority = 10, keyword_length = 2 })
-      -- table.insert(opts.sources, { name = "copilot", priority = 1, keyword_length = 3 })
 
       opts.sorting = defaults.sorting
     end,

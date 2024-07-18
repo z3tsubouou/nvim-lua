@@ -24,10 +24,10 @@ keymap.set("n", "tn", "<Cmd>term<CR>")
 -- keymap.set('n', 'tb', 'gT')
 
 -- Split window
-keymap.set("n", "<leader>wx", "<cmd>split<cr>", { desc = "Split window below" })
-keymap.set("n", "<leader>wv", "<cmd>vsplit<cr>", { desc = "Split window right" })
-keymap.set("n", "<leader>wn", "<cmd>cnext<cr>", { desc = "Quicklist next" })
-keymap.set("n", "<leader>wp", "<cmd>cprev<cr>", { desc = "Quicklist prev" })
+keymap.set("n", "<leader>wx", "<cmd>split<CR>", { desc = "Split window below" })
+keymap.set("n", "<leader>wv", "<cmd>vsplit<CR>", { desc = "Split window right" })
+keymap.set("n", "<leader>wn", "<cmd>cnext<CR>", { desc = "Quicklist next" })
+keymap.set("n", "<leader>wp", "<cmd>cprev<CR>", { desc = "Quicklist prev" })
 
 -- Move window
 -- keymap.set('n', '<leader>', '<C-w>w')
