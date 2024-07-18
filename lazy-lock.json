@@ -38,6 +38,7 @@
   "mini.indentscope": { "branch": "main", "commit": "1222393d9c5e8d92b913ccab6701a7164b21781c" },
   "mini.pairs": { "branch": "main", "commit": "927d19cbdd0e752ab1c7eed87072e71d2cd6ff51" },
   "mini.surround": { "branch": "main", "commit": "57caca9525cec0ea771a67326b0ee637d056078a" },
+  "neogen": { "branch": "main", "commit": "6de0add4805165317ab7d3d36b5cef48b1b865f3" },
   "nightfox.nvim": { "branch": "main", "commit": "df75a6a94910ae47854341d6b5a6fd483192c0eb" },
   "noice.nvim": { "branch": "main", "commit": "daa5f6908e97c89ca3e9861e03bdf356ea48cc72" },
   "none-ls.nvim": { "branch": "main", "commit": "8b5d4170a602d7b257704eef77b0539ddfd02589" },
