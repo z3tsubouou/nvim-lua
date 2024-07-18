@@ -133,7 +133,7 @@ return {
       opts.config.header = vim.split(logo, "\n")
       opts.config.center = {
         {
-          action = "Telescope find_files",
+          action = "lua LazyVim.pick()()",
           desc = " Find file                 ",
           icon = " ",
           key = "p",
@@ -145,19 +145,25 @@ return {
           key = "b",
         },
         {
-          action = "Telescope oldfiles",
+          action = 'lua LazyVim.pick("oldfiles")()',
           desc = " Recent files                 ",
           icon = " ",
           key = "r",
         },
         {
-          action = "Telescope live_grep",
+          action = 'lua LazyVim.pick("live_grep")()',
           desc = " Find text                 ",
           icon = " ",
           key = "f",
         },
         {
-          action = [[lua require("lazyvim.util").telescope.config_files()()]],
+          action = "CdProject",
+          desc = " Choose project                 ",
+          icon = " ",
+          key = ";",
+        },
+        {
+          action = "lua LazyVim.pick.config_files()()",
           desc = " Config                 ",
           icon = " ",
           key = "c",
