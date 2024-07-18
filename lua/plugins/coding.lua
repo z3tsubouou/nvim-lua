@@ -59,9 +59,6 @@ return {
 
       return {
         completion = {
-          autocomplete = {
-            cmp.TriggerEvent.TextChanged,
-          },
           completeopt = "menu,menuone,noinsert",
         },
         snippet = {
@@ -91,18 +88,12 @@ return {
           end,
         }),
         sources = cmp.config.sources({
-          {
-            name = "luasnip",
-            priority = 150,
-            group_index = 1,
-            option = { show_autosnippets = false, use_show_condition = false },
-          },
-          { name = "nvim_lsp", priority = 100, group_index = 1 },
-          { name = "copilot", priority = 100, group_index = 2 },
-          { name = "buffer" },
-          { name = "path" },
-          { name = "emoji" },
-          { name = "dap" },
+          { name = "nvim_lsp", priority = 1000 },
+          { name = "luasnip", priority = 750 },
+          { name = "buffer", priority = 500 },
+          { name = "path", priority = 250 },
+          { name = "emoji", priority = 700 }, -- add new source
+          { name = "copilot", priority = 100 },
         }, {
           { name = "buffer" },
         }),
@@ -154,10 +145,10 @@ return {
           enabled = true,
           auto_refresh = false,
           keymap = {
-            jump_prev = "[[",
-            jump_next = "]]",
+            jump_prev = "<M-[>",
+            jump_next = "<M-]>",
             accept = "<CR>",
-            refresh = "gr",
+            refresh = "<M-r>",
             open = "<M-CR>",
           },
           layout = {
@@ -166,10 +157,11 @@ return {
           },
         },
         suggestion = {
-          enabled = false,
-          auto_trigger = true,
+          enabled = true,
+          auto_trigger = false,
           debounce = 75,
           keymap = {
+            toggle_auto_trigger = "<M-c>",
             accept = "<M-l>",
             accept_word = false,
             accept_line = false,

@@ -15,6 +15,7 @@ return {
       { "<leader>,", nil },
       { "<leader>:", nil },
       { "<leader>/", nil },
+      { "<leader>fo", nil },
       {
         "<leader>fP",
         function()
