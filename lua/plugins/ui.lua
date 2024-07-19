@@ -159,7 +159,7 @@ return {
         {
           action = "CdProject",
           desc = " Choose project                 ",
-          icon = " ",
+          icon = "",
           key = ";",
         },
         {
