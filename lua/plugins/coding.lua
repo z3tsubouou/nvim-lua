@@ -45,7 +45,6 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
-      "L3MON4D3/LuaSnip",
       "hrsh7th/cmp-emoji",
     },
     event = "VeryLazy",
@@ -117,29 +116,9 @@ return {
       })
 
       table.insert(opts.sources, { name = "buffer" })
-      table.insert(opts.sources, { name = "luasnip" })
       table.insert(opts.sources, { name = "emoji" })
 
       opts.sorting = defaults.sorting
-
-      -- opts.sorting = {
-      --   priority_weight = 2,
-      --   comparators = {
-      --     -- require("copilot_cmp.comparators").prioritize,
-
-      --     -- Below is the default comparitor list and order for nvim-cmp
-      --     cmp.config.compare.offset,
-      --     -- cmp.config.compare.scopes, --this is commented in nvim-cmp too
-      --     cmp.config.compare.exact,
-      --     cmp.config.compare.score,
-      --     cmp.config.compare.recently_used,
-      --     cmp.config.compare.locality,
-      --     cmp.config.compare.kind,
-      --     cmp.config.compare.sort_text,
-      --     cmp.config.compare.length,
-      --     cmp.config.compare.order,
-      --   },
-      -- }
     end,
   },
   {
