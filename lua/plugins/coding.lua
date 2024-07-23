@@ -116,12 +116,37 @@ return {
         end, { "i", "s" }),
       })
 
-      table.insert(opts.sources, { name = "path", priority = 100 })
-      table.insert(opts.sources, { name = "nvim_lsp", priority = 90, keyword_length = 1 })
-      table.insert(opts.sources, { name = "buffer", priority = 80, keyword_length = 3 })
-      table.insert(opts.sources, { name = "luasnip", priority = 70, keyword_length = 2 })
+      table.insert(opts.sources, { name = "buffer" })
+      table.insert(opts.sources, { name = "luasnip" })
+      table.insert(opts.sources, { name = "emoji" })
+      -- table.insert(opts.sources, { name = "copilot", priority = 60, keyword_length = 2 })
 
       opts.sorting = defaults.sorting
+
+      -- opts.sorting = {
+      --   priority_weight = 2,
+      --   comparators = {
+      --     -- require("copilot_cmp.comparators").prioritize,
+
+      --     -- Below is the default comparitor list and order for nvim-cmp
+      --     cmp.config.compare.offset,
+      --     -- cmp.config.compare.scopes, --this is commented in nvim-cmp too
+      --     cmp.config.compare.exact,
+      --     cmp.config.compare.score,
+      --     cmp.config.compare.recently_used,
+      --     cmp.config.compare.locality,
+      --     cmp.config.compare.kind,
+      --     cmp.config.compare.sort_text,
+      --     cmp.config.compare.length,
+      --     cmp.config.compare.order,
+      --   },
+      -- }
+    end,
+  },
+  {
+    "zbirenbaum/copilot-cmp",
+    config = function()
+      require("copilot_cmp").setup()
     end,
   },
   {
