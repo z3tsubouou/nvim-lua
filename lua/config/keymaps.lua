@@ -4,22 +4,22 @@
 
 local keymap = vim.keymap
 
-keymap.set("n", "x", '"_x')
+keymap.set("n", "x", '"_x', { desc = "Delete character" })
 -- keymap.set("n", "<space>x", "<Cmd>:q<CR>")
 
 -- Increment/decrement
-keymap.set("n", "+", "<C-a>")
-keymap.set("n", "-", "<C-x>")
+keymap.set("n", "+", "<C-a>", { desc = "Increment" })
+keymap.set("n", "-", "<C-x>", { desc = "Decrement" })
 
 -- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
+keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 
 -- Save with root permission (not working for now)
 -- vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
 -- New tab
-keymap.set("n", "te", "<Cmd>tabnew +term<CR>")
-keymap.set("n", "tn", "<Cmd>term<CR>")
+keymap.set("n", "<leader>te", "<Cmd>tabnew +term<CR>", { desc = "New terminal buffer tab" })
+keymap.set("n", "<leader>tn", "<Cmd>term<CR>", { desc = "New terminal tab" })
 -- keymap.set('n', 'tn', 'gt')
 -- keymap.set('n', 'tb', 'gT')
 
@@ -31,27 +31,27 @@ keymap.set("n", "<leader>wp", "<cmd>cprev<CR>", { desc = "Quicklist prev" })
 
 -- Move window
 -- keymap.set('n', '<leader>', '<C-w>w')
-keymap.set("", "<leader>wh", "<C-w>h")
-keymap.set("", "<leader>wk", "<C-w>k")
-keymap.set("", "<leader>wj", "<C-w>j")
-keymap.set("", "<leader>wl", "<C-w>l")
+keymap.set("", "<leader>wh", "<C-w>h", { desc = "Move to window left" })
+keymap.set("", "<leader>wk", "<C-w>k", { desc = "Move to window up" })
+keymap.set("", "<leader>wj", "<C-w>j", { desc = "Move to window down" })
+keymap.set("", "<leader>wl", "<C-w>l", { desc = "Move to window right" })
 --
 -- Resize window
-keymap.set("n", "<C-l>", "<C-w><")
-keymap.set("n", "<C-h>", "<C-w>>")
-keymap.set("n", "<C-k>", "<C-w>+")
-keymap.set("n", "<C-j>", "<C-w>-")
+keymap.set("n", "<C-l>", "<C-w><", { desc = "Resize window left" })
+keymap.set("n", "<C-h>", "<C-w>>", { desc = "Resize window right" })
+keymap.set("n", "<C-k>", "<C-w>+", { desc = "Resize window up" })
+keymap.set("n", "<C-j>", "<C-w>-", { desc = "Resize window down" })
 
 -- move line
 -- keymap.set("n", "J", "<Cmd>:m +1<CR>")
 -- keymap.set("n", "K", "<Cmd>:m -2<CR>")
-keymap.set("n", ">", ">>")
-keymap.set("n", "<", "<<")
+keymap.set("n", ">", ">>", { noremap = true })
+keymap.set("n", "<", "<<", { noremap = true })
 
 -- noh
 -- keymap.set('n', 'noh', '<Cmd>:noh<CR>')
-keymap.set("n", "gob", "<C-O>")
-keymap.set("n", "gon", "<Tab>")
+keymap.set("n", "gob", "<C-O>", { noremap = true })
+keymap.set("n", "gon", "<Tab>", { noremap = true })
 
 --change working space
 -- keymap.set("n", "cd", ":cd %:p:h")
@@ -61,7 +61,7 @@ keymap.set("n", "gon", "<Tab>")
 -- keymap.set("t", "<leader>x", "<C-\\><C-n>")
 
 -- delete buffer
-keymap.set("n", "ZZ", "<Cmd>:bdelete<CR>")
+keymap.set("n", "ZZ", "<Cmd>:bdelete<CR>", { desc = "Delete buffer" })
 
 -- deisabled keys
 keymap.del("n", "<A-j>")
