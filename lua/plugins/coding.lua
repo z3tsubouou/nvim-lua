@@ -119,7 +119,6 @@ return {
       table.insert(opts.sources, { name = "buffer" })
       table.insert(opts.sources, { name = "luasnip" })
       table.insert(opts.sources, { name = "emoji" })
-      -- table.insert(opts.sources, { name = "copilot", priority = 60, keyword_length = 2 })
 
       opts.sorting = defaults.sorting
 

@@ -165,7 +165,7 @@ return {
         {
           action = "lua LazyVim.pick.config_files()()",
           desc = " Config                 ",
-          icon = "⚙️ ",
+          icon = "⚙️  ",
           key = "c",
         },
         {
