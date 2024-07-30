@@ -203,6 +203,7 @@ return {
   -- lazy.nvim
   {
     "ThePrimeagen/harpoon",
+    lazy = true,
     branch = "harpoon2",
     opts = {
       menu = {

@@ -2,6 +2,7 @@ return {
   -- Create annotations with one keybind, and jump your cursor in the inserted annotation
   {
     "danymat/neogen",
+    lazy = true,
     keys = {
       {
         "<leader>cg",
@@ -15,6 +16,7 @@ return {
   },
   {
     "dinhhuy258/git.nvim",
+    lazy = true,
     event = "BufReadPre",
     opts = {
       keymaps = {
@@ -45,6 +47,7 @@ return {
   },
   {
     "folke/todo-comments.nvim",
+    lazy = true,
     opts = {
       search = {
         command = "rg",
@@ -141,6 +144,7 @@ return {
   },
   {
     "zbirenbaum/copilot-cmp",
+    lazy = true,
     config = function()
       require("copilot_cmp").setup()
     end,
