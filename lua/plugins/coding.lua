@@ -37,7 +37,7 @@ return {
         -- Opens a new diff that compares against the current index
         diff = "<Leader>gd",
         -- Close git diff
-        diff_close = "q",
+        diff_close = "<Leader>gD",
         -- Revert to the specific commit
         revert = "<Leader>gr",
         -- Revert the current file to the specific commit
