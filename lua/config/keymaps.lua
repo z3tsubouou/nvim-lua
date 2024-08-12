@@ -50,8 +50,8 @@ keymap.set("n", "<", "<<", { noremap = true })
 
 -- noh
 -- keymap.set('n', 'noh', '<Cmd>:noh<CR>')
-keymap.set("n", "gob", "<C-O>", { noremap = true })
-keymap.set("n", "gon", "<Tab>", { noremap = true })
+-- keymap.set("n", "gob", "<C-O>", { noremap = true })
+-- keymap.set("n", "gon", "<Tab>", { noremap = true })
 
 --change working space
 -- keymap.set("n", "cd", ":cd %:p:h")
