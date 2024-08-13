@@ -45,8 +45,8 @@ keymap.set("n", "<C-j>", "<C-w>-", { desc = "Resize window down" })
 -- move line
 -- keymap.set("n", "J", "<Cmd>:m +1<CR>")
 -- keymap.set("n", "K", "<Cmd>:m -2<CR>")
-keymap.set("n", ">", ">>", { noremap = true })
-keymap.set("n", "<", "<<", { noremap = true })
+-- keymap.set("n", ">", ">>", { noremap = true })
+-- keymap.set("n", "<", "<<", { noremap = true })
 
 -- noh
 -- keymap.set('n', 'noh', '<Cmd>:noh<CR>')
