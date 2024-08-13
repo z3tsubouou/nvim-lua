@@ -61,7 +61,7 @@ keymap.set("n", "<", "<<", { noremap = true })
 -- keymap.set("t", "<leader>x", "<C-\\><C-n>")
 
 -- delete buffer
-keymap.set("n", "ZZ", "<Cmd>:bdelete<CR>", { desc = "Delete buffer" })
+-- keymap.set("n", "ZZ", "<Cmd>:bdelete<CR>", { desc = "Delete buffer" })
 
 -- deisabled keys
 keymap.del("n", "<A-j>")
