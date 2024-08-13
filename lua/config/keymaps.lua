@@ -24,17 +24,17 @@ keymap.set("n", "<leader>tn", "<Cmd>term<CR>", { desc = "New terminal tab" })
 -- keymap.set('n', 'tb', 'gT')
 
 -- Split window
-keymap.set("", "<leader>wx", "<cmd>split<CR>", { desc = "Split window below" })
-keymap.set("", "<leader>wv", "<cmd>vsplit<CR>", { desc = "Split window right" })
-keymap.set("", "<leader>wn", "<cmd>cnext<CR>", { desc = "Quicklist next" })
-keymap.set("", "<leader>wp", "<cmd>cprev<CR>", { desc = "Quicklist prev" })
+-- keymap.set("", "<leader>wx", "<cmd>split<CR>", { desc = "Split window below" })
+-- keymap.set("", "<leader>wv", "<cmd>vsplit<CR>", { desc = "Split window right" })
+-- keymap.set("", "<leader>wn", "<cmd>cnext<CR>", { desc = "Quicklist next" })
+-- keymap.set("", "<leader>wp", "<cmd>cprev<CR>", { desc = "Quicklist prev" })
 
 -- Move window
 -- keymap.set('n', '<leader>', '<C-w>w')
-keymap.set("", "<leader>wh", "<C-w>h", { desc = "Move to window left" })
-keymap.set("", "<leader>wk", "<C-w>k", { desc = "Move to window up" })
-keymap.set("", "<leader>wj", "<C-w>j", { desc = "Move to window down" })
-keymap.set("", "<leader>wl", "<C-w>l", { desc = "Move to window right" })
+-- keymap.set("", "<leader>wh", "<C-w>h", { desc = "Move to window left" })
+-- keymap.set("", "<leader>wk", "<C-w>k", { desc = "Move to window up" })
+-- keymap.set("", "<leader>wj", "<C-w>j", { desc = "Move to window down" })
+-- keymap.set("", "<leader>wl", "<C-w>l", { desc = "Move to window right" })
 --
 -- Resize window
 keymap.set("n", "<C-l>", "<C-w><", { desc = "Resize window left" })
