@@ -47,7 +47,7 @@ return {
   },
   {
     "folke/todo-comments.nvim",
-    lazy = true,
+    event = "VeryLazy",
     opts = {
       search = {
         command = "rg",
@@ -144,7 +144,7 @@ return {
   },
   {
     "zbirenbaum/copilot-cmp",
-    lazy = true,
+    event = "VeryLazy",
     config = function()
       require("copilot_cmp").setup()
     end,
@@ -203,6 +203,7 @@ return {
   },
   {
     "m4xshen/hardtime.nvim",
+    event = "VeryLazy",
     dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
     opts = {},
   },
