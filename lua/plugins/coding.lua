@@ -1,20 +1,6 @@
 return {
   -- Create annotations with one keybind, and jump your cursor in the inserted annotation
   {
-    "danymat/neogen",
-    lazy = true,
-    keys = {
-      {
-        "<leader>cg",
-        function()
-          require("neogen").generate({})
-        end,
-        desc = "Neogen Comment",
-      },
-    },
-    opts = { snippet_engine = "luasnip" },
-  },
-  {
     "dinhhuy258/git.nvim",
     lazy = true,
     event = "BufReadPre",
