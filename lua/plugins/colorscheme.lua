@@ -17,7 +17,18 @@ return {
       terminalColors = true, -- define vim.g.terminal_color_{0,17}
       colors = { -- add/modify theme and palette colors
         palette = {},
-        theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+        theme = {
+          wave = {
+            ui = {
+              bg_gutter = "none",
+              nontext = "#658594",
+              -- line number
+            },
+          },
+          lotus = {},
+          dragon = {},
+          all = {},
+        },
       },
       overrides = function(colors) -- add/modify highlights
         return {}
