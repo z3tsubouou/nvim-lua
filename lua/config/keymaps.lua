@@ -42,6 +42,10 @@ keymap.set("n", "<C-h>", "<C-w>>", { desc = "Resize window right" })
 keymap.set("n", "<C-k>", "<C-w>+", { desc = "Resize window up" })
 keymap.set("n", "<C-j>", "<C-w>-", { desc = "Resize window down" })
 
+-- escape
+
+keymap.set("i", "jk", "<Esc>", { noremap = true })
+
 -- move line
 -- keymap.set("n", "J", "<Cmd>:m +1<CR>")
 -- keymap.set("n", "K", "<Cmd>:m -2<CR>")
