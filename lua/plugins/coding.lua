@@ -97,13 +97,13 @@ return {
       opts.sorting = defaults.sorting
     end,
   },
-  {
-    "zbirenbaum/copilot-cmp",
-    event = "VeryLazy",
-    config = function()
-      require("copilot_cmp").setup()
-    end,
-  },
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   event = "VeryLazy",
+  --   config = function()
+  --     require("copilot_cmp").setup()
+  --   end,
+  -- },
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",

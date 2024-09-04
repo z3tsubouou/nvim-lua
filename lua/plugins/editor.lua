@@ -197,9 +197,9 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
-  {
-    { "LintaoAmons/cd-project.nvim" },
-  },
+  -- {
+  --   { "LintaoAmons/cd-project.nvim" },
+  -- },
   -- lazy.nvim
   {
     "ThePrimeagen/harpoon",

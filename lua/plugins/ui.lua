@@ -139,12 +139,6 @@ return {
           key = "f",
         },
         {
-          action = "CdProject",
-          desc = " Choose project                 ",
-          icon = "📁 ",
-          key = ";",
-        },
-        {
           action = "lua LazyVim.pick.config_files()()",
           desc = " Config                 ",
           icon = "⚙️  ",
