@@ -24,57 +24,6 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        vtsls = {
-          enabled = false,
-        },
-        tsserver = {
-          enabled = true,
-          settings = {
-            typescript = {
-              inlayHints = {
-                includeInlayEnumMemberValueHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayParameterNameHints = "literals",
-                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayVariableTypeHints = false,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = false,
-              },
-            },
-            completions = {
-              completeFunctionCalls = true,
-            },
-          },
-          keys = {
-            {
-              "<leader>co",
-              function()
-                vim.lsp.buf.code_action({
-                  apply = true,
-                  context = {
-                    only = { "source.organizeImports.ts" },
-                    diagnostics = {},
-                  },
-                })
-              end,
-              desc = "Organize Imports",
-            },
-            {
-              "<leader>cu",
-              function()
-                vim.lsp.buf.code_action({
-                  apply = true,
-                  context = {
-                    only = { "source.removeUnused.ts" },
-                    diagnostics = {},
-                  },
-                })
-              end,
-              desc = "Remove Unused Imports",
-            },
-          },
-        },
         yamlls = {
           settings = {
             yaml = {
@@ -111,12 +60,24 @@ return {
             },
           },
         },
+        taplo = {
+          keys = {
+            {
+              "K",
+              function()
+                if vim.fn.expand("%:t") == "Cargo.toml" and require("crates").popup_available() then
+                  require("crates").show_popup()
+                else
+                  vim.lsp.buf.hover()
+                end
+              end,
+              desc = "Show Crate Documentation",
+            },
+          },
+        },
       },
       setup = {
-        tsserver = function()
-          return false
-        end,
-        vtsls = function()
+        rust_analyzer = function()
           return true
         end,
       },

@@ -120,6 +120,7 @@ return {
           "datafeeds",
           "charting_library",
           "datafeeds",
+          "target",
         },
         initial_mode = "normal",
         wrap_results = true,
