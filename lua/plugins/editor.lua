@@ -124,6 +124,7 @@ return {
         },
         initial_mode = "normal",
         wrap_results = true,
+        include_declaration = false,
         layout_strategy = "horizontal",
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
