@@ -199,6 +199,12 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
+  {
+    "tiagovla/scope.nvim",
+    config = function()
+      require("scope").setup({})
+    end,
+  },
   -- {
   --   { "LintaoAmons/cd-project.nvim" },
   -- },
