@@ -18,8 +18,9 @@ keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 -- vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
 -- New tab
-keymap.set("n", "<leader>te", "<Cmd>tabnew +term<CR>", { desc = "New terminal buffer tab" })
-keymap.set("n", "<leader>tn", "<Cmd>term<CR>", { desc = "New terminal tab" })
+-- keymap.set("n", "<leader>t", "", { desc = "New terminal tab" })
+-- keymap.set("n", "<leader>te", "<Cmd>tabnew +term<CR>", { desc = "New terminal buffer tab" })
+-- keymap.set("n", "<leader>tn", "<Cmd>term<CR>", { desc = "New terminal tab" })
 -- keymap.set('n', 'tn', 'gt')
 -- keymap.set('n', 'tb', 'gT')
 

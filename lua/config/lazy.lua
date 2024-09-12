@@ -27,6 +27,7 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.lang.java" },
 
     { import = "lazyvim.plugins.extras.editor.mini-diff" },
+    { import = "lazyvim.plugins.extras.editor.harpoon2" },
 
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.luasnip" },

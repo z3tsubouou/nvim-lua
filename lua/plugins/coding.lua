@@ -112,14 +112,15 @@ return {
     config = function()
       require("copilot").setup({
         panel = {
-          enabled = true,
+          enabled = false,
           auto_refresh = false,
           keymap = {
             jump_prev = "<M-[>",
             jump_next = "<M-]>",
             accept = "<CR>",
             refresh = "<M-r>",
-            open = "<M-CR>",
+            -- open = "<M-CR>",
+            open = "<M-l>",
           },
           layout = {
             position = "bottom", -- | top | left | right
@@ -132,7 +133,8 @@ return {
           debounce = 75,
           keymap = {
             toggle_auto_trigger = "<M-c>",
-            accept = "<M-l>",
+            -- accept = "<M-l>",
+            open = "<M-CR>",
             accept_word = false,
             accept_line = false,
             next = "<M-]>",
@@ -141,15 +143,8 @@ return {
           },
         },
         filetypes = {
-          yaml = false,
-          markdown = false,
-          help = false,
-          gitcommit = false,
-          gitrebase = false,
-          hgcommit = false,
-          svn = false,
-          cvs = false,
-          ["."] = false,
+          markdown = true,
+          help = true,
         },
         copilot_node_command = "node", -- Node.js version must be > 18.x
         server_opts_overrides = {},
