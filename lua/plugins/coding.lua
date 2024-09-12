@@ -134,7 +134,7 @@ return {
           keymap = {
             toggle_auto_trigger = "<M-c>",
             -- accept = "<M-l>",
-            open = "<M-CR>",
+            accept = "<M-CR>",
             accept_word = false,
             accept_line = false,
             next = "<M-]>",
