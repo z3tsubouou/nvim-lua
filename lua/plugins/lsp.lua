@@ -15,6 +15,7 @@ return {
         "css-lsp",
         "goimports",
         "gofumpt",
+        "black",
       })
     end,
   },
