@@ -11,39 +11,6 @@ return {
       "nvim-telescope/telescope-file-browser.nvim",
     },
     keys = {
-      { "<leader><space>", nil },
-      { "<leader>,", nil },
-      { "<leader>:", nil },
-      { "<leader>/", nil },
-      { "<leader>fo", nil },
-      {
-        "<leader>fP",
-        function()
-          require("telescope.builtin").find_files({
-            cwd = require("lazy.core.config").options.root,
-          })
-        end,
-        desc = "Find Plugin File",
-      },
-      {
-        "<leader>fp",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.find_files({
-            no_ignore = false,
-            hidden = true,
-          })
-        end,
-        desc = "Lists files in your current working directory, respects .gitignore",
-      },
-      {
-        "<leader>ff",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.live_grep()
-        end,
-        desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
-      },
       {
         "<leader>f\\",
         function()
@@ -51,38 +18,6 @@ return {
           builtin.buffers()
         end,
         desc = "Lists open buffers",
-      },
-      {
-        "<leader>ft",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.help_tags()
-        end,
-        desc = "Lists available help tags and opens a new window with the relevant help info on <cr>",
-      },
-      {
-        "<leader>f;",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.resume()
-        end,
-        desc = "Resume the previous telescope picker",
-      },
-      {
-        "<leader>fd",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.diagnostics()
-        end,
-        desc = "Lists Diagnostics for all open buffers or a specific buffer",
-      },
-      {
-        "<leader>fs",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.treesitter()
-        end,
-        desc = "Lists Function names, variables, from Treesitter",
       },
       {
         "<leader>fb",
@@ -111,17 +46,7 @@ return {
       local fb_actions = require("telescope").extensions.file_browser.actions
 
       opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
-        file_ignore_patterns = {
-          "node_modules",
-          "build",
-          "dist",
-          ".git/",
-          "charting_library",
-          "datafeeds",
-          "charting_library",
-          "datafeeds",
-          "target",
-        },
+        theme = "ivy",
         initial_mode = "normal",
         wrap_results = true,
         include_declaration = false,
@@ -129,25 +54,8 @@ return {
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
         winblend = 0,
-        mappings = {
-          i = {
-            ["<c-t>"] = function(bufnr)
-              actions.select_tab(bufnr)
-            end,
-            ["<C-t>"] = function(bufnr)
-              actions.select_tab(bufnr)
-            end,
-          },
-          n = {
-            ["<c-t>"] = function(bufnr)
-              actions.select_tab(bufnr)
-            end,
-            ["<C-t>"] = function(bufnr)
-              actions.select_tab(bufnr)
-            end,
-          },
-        },
       })
+
       opts.pickers = {
         diagnostics = {
           layout_config = {
@@ -155,6 +63,7 @@ return {
           },
         },
       }
+
       opts.extensions = {
         file_browser = {
           hidden = true,

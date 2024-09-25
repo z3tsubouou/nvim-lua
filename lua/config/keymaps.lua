@@ -4,7 +4,7 @@
 
 local keymap = vim.keymap
 
-keymap.set("n", "x", '"_x', { desc = "Delete character" })
+-- keymap.set("n", "x", '"_x', { desc = "Delete character" })
 -- keymap.set("n", "<space>x", "<Cmd>:q<CR>")
 
 -- Increment/decrement

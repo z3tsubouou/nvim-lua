@@ -37,10 +37,10 @@ return {
                 includeInlayFunctionLikeReturnTypeHints = true,
                 includeInlayFunctionParameterTypeHints = true,
                 includeInlayParameterNameHints = "literals",
-                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                -- includeInlayParameterNameHintsWhenArgumentMatchesName = false,
                 includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayVariableTypeHints = false,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+                -- includeInlayVariableTypeHints = false,
+                -- includeInlayVariableTypeHintsWhenTypeMatchesName = false,
               },
             },
             completions = {
