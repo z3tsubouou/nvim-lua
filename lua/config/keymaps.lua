@@ -69,12 +69,7 @@ keymap.set("i", "jk", "<Esc>", { noremap = true })
 -- keymap.set("n", "ZZ", "<Cmd>:bdelete<CR>", { desc = "Delete buffer" })
 
 -- deisabled keys
-keymap.del("n", "<A-j>")
-keymap.del("n", "<A-k>")
--- keymap.del("n", "<space>w-")
--- keymap.del("n", "<space>w|")
 keymap.del("n", "<space>-")
 keymap.del("n", "<leader>|")
 keymap.del("n", "<leader>`")
 keymap.del("n", "<leader>K")
--- keymap.del("n", "<leader><space>")
