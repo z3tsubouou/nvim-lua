@@ -109,18 +109,6 @@ return {
     end,
   },
   {
-    "echasnovski/mini.files",
-    keys = {
-      {
-        "<leader>fn",
-        function()
-          require("mini.files").open()
-        end,
-        desc = "Open mini.files",
-      },
-    },
-  },
-  {
     "tiagovla/scope.nvim",
     config = function()
       require("scope").setup({})
