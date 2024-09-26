@@ -19,31 +19,31 @@ return {
         end,
         desc = "Lists open buffers",
       },
-      -- {
-      --   "<leader>fb",
-      --   function()
-      --     local telescope = require("telescope")
-      --
-      --     local function telescope_buffer_dir()
-      --       return vim.fn.expand("%:p:h")
-      --     end
-      --
-      --     telescope.extensions.file_browser.file_browser({
-      --       path = "%:p:h",
-      --       cwd = telescope_buffer_dir(),
-      --       respect_gitignore = false,
-      --       hidden = true,
-      --       grouped = true,
-      --       previewer = true,
-      --     })
-      --   end,
-      --   desc = "Open File Browser with the path of the current buffer",
-      -- },
+      {
+        "<leader>fb",
+        function()
+          local telescope = require("telescope")
+
+          local function telescope_buffer_dir()
+            return vim.fn.expand("%:p:h")
+          end
+
+          telescope.extensions.file_browser.file_browser({
+            path = "%:p:h",
+            cwd = telescope_buffer_dir(),
+            respect_gitignore = false,
+            hidden = true,
+            grouped = true,
+            previewer = true,
+          })
+        end,
+        desc = "Open File Browser with the path of the current buffer",
+      },
     },
     config = function(_, opts)
       local telescope = require("telescope")
-      -- local actions = require("telescope.actions")
-      -- local fb_actions = require("telescope").extensions.file_browser.actions
+      local actions = require("telescope.actions")
+      local fb_actions = require("telescope").extensions.file_browser.actions
 
       opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
         -- theme = "ivy",
@@ -65,43 +65,43 @@ return {
       }
 
       opts.extensions = {
-        -- file_browser = {
-        --   hidden = true,
-        --   -- disables netrw and use telescope-file-browser in its place
-        --   hijack_netrw = true,
-        --   previewer = true,
-        --   respect_gitignore = false,
-        --   grouped = true,
-        --   mappings = {
-        --     -- your custom insert mode mappings
-        --     ["n"] = {
-        --       -- your custom normal mode mappings
-        --       ["R"] = fb_actions.rename,
-        --       ["M"] = fb_actions.move,
-        --       ["N"] = fb_actions.create,
-        --       ["D"] = fb_actions.remove,
-        --       ["h"] = fb_actions.goto_parent_dir,
-        --       ["/"] = function()
-        --         vim.cmd("startinsert")
-        --       end,
-        --       ["<C-u>"] = function(prompt_bufnr)
-        --         for i = 1, 10 do
-        --           actions.move_selection_previous(prompt_bufnr)
-        --         end
-        --       end,
-        --       ["<C-d>"] = function(prompt_bufnr)
-        --         for i = 1, 10 do
-        --           actions.move_selection_next(prompt_bufnr)
-        --         end
-        --       end,
-        --       ["<C-t>"] = function(bufnr)
-        --         actions.select_tab(bufnr)
-        --       end,
-        --       ["<PageUp>"] = actions.preview_scrolling_up,
-        --       ["<PageDown>"] = actions.preview_scrolling_down,
-        --     },
-        --   },
-        -- },
+        file_browser = {
+          hidden = true,
+          -- disables netrw and use telescope-file-browser in its place
+          hijack_netrw = true,
+          previewer = true,
+          respect_gitignore = false,
+          grouped = true,
+          mappings = {
+            -- your custom insert mode mappings
+            ["n"] = {
+              -- your custom normal mode mappings
+              ["R"] = fb_actions.rename,
+              ["M"] = fb_actions.move,
+              ["N"] = fb_actions.create,
+              ["D"] = fb_actions.remove,
+              ["h"] = fb_actions.goto_parent_dir,
+              ["/"] = function()
+                vim.cmd("startinsert")
+              end,
+              ["<C-u>"] = function(prompt_bufnr)
+                for _ = 1, 10 do
+                  actions.move_selection_previous(prompt_bufnr)
+                end
+              end,
+              ["<C-d>"] = function(prompt_bufnr)
+                for _ = 1, 10 do
+                  actions.move_selection_next(prompt_bufnr)
+                end
+              end,
+              ["<C-t>"] = function(bufnr)
+                actions.select_tab(bufnr)
+              end,
+              ["<PageUp>"] = actions.preview_scrolling_up,
+              ["<PageDown>"] = actions.preview_scrolling_down,
+            },
+          },
+        },
       }
       telescope.setup(opts)
       require("telescope").load_extension("fzf")
