@@ -118,13 +118,7 @@ return {
           action = "lua LazyVim.pick()()",
           desc = " Find file                 ",
           icon = "🔭 ",
-          key = "p",
-        },
-        {
-          action = "Telescope file_browser",
-          desc = " File browser                 ",
-          icon = "🗃️ ",
-          key = "b",
+          key = "f",
         },
         {
           action = 'lua LazyVim.pick("oldfiles")()',
@@ -136,7 +130,7 @@ return {
           action = 'lua LazyVim.pick("live_grep")()',
           desc = " Find text                 ",
           icon = "📰 ",
-          key = "f",
+          key = "g",
         },
         {
           action = "lua LazyVim.pick.config_files()()",
