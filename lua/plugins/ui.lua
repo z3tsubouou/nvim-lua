@@ -17,6 +17,13 @@ return {
         },
         opts = { skip = true },
       })
+      table.insert(opts.routes, {
+        filter = {
+          event = "notify",
+          find = "Language server `vtsls` does not support command `_typescript.didOrganizeImports`",
+        },
+        opts = { skip = true },
+      })
       local focused = true
       vim.api.nvim_create_autocmd("FocusGained", {
         callback = function()
