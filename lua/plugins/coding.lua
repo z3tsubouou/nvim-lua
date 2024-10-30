@@ -113,19 +113,18 @@ return {
       require("copilot").setup({
         panel = {
           enabled = false,
-          -- auto_refresh = false,
-          -- keymap = {
-          --   jump_prev = "<M-[>",
-          --   jump_next = "<M-]>",
-          --   accept = "<CR>",
-          --   refresh = "<M-r>",
-          --   -- open = "<M-CR>",
-          --   open = "<M-l>",
-          -- },
-          -- layout = {
-          --   position = "bottom", -- | top | left | right
-          --   ratio = 0.4,
-          -- },
+          auto_refresh = false,
+          keymap = {
+            jump_prev = "<M-[>",
+            jump_next = "<M-]>",
+            accept = "<CR>",
+            refresh = "<M-r>",
+            open = "<M-l>",
+          },
+          layout = {
+            position = "bottom", -- | top | left | right
+            ratio = 0.4,
+          },
         },
         suggestion = {
           enabled = true,
@@ -143,7 +142,34 @@ return {
         },
         filetypes = {
           markdown = true,
-          help = true,
+          yaml = true,
+          typescript = true,
+          javascript = true,
+          javascriptreact = true,
+          typescriptreact = true,
+          -- svelte = true,
+          -- vue = true,
+          -- html = true,
+          -- css = true,
+          -- scss = true,
+          -- json = true,
+          -- graphql = true,
+          -- php = true,
+          -- python = true,
+          -- rust = true,
+          -- toml = true,
+          -- go = true,
+          -- java = true,
+          -- kotlin = true,
+          -- lua = true,
+          -- ruby = true,
+          -- elixir = true,
+          -- erlang = true,
+          -- shell = true,
+          -- fish = true,
+          -- zsh = true,
+          -- bash = true,
+          ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
         },
         copilot_node_command = "node", -- Node.js version must be > 18.x
         server_opts_overrides = {},
