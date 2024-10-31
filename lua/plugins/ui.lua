@@ -24,6 +24,13 @@ return {
         },
         opts = { skip = true },
       })
+      table.insert(opts.routes, {
+        filter = {
+          event = "notify",
+          find = "Request textDocument/documentHighlight failed with message",
+        },
+        opts = { skip = true },
+      })
       local focused = true
       vim.api.nvim_create_autocmd("FocusGained", {
         callback = function()
