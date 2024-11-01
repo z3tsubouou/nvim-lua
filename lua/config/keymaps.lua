@@ -40,8 +40,8 @@ keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 -- Resize window
 keymap.set("n", "<C-l>", "<C-w><", { desc = "Resize window left" })
 keymap.set("n", "<C-h>", "<C-w>>", { desc = "Resize window right" })
-keymap.set("n", "<C-k>", "<C-w>+", { desc = "Resize window up" })
-keymap.set("n", "<C-j>", "<C-w>-", { desc = "Resize window down" })
+keymap.set("n", "<C-k>", "<C-w>-", { desc = "Resize window up" })
+keymap.set("n", "<C-j>", "<C-w>+", { desc = "Resize window down" })
 
 -- escape
 
