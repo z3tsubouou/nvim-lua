@@ -32,6 +32,7 @@ return {
         "gowork",
         "gosum",
         "svelte",
+        "php",
       },
       incremental_selection = {
         enable = true,

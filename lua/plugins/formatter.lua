@@ -6,6 +6,7 @@ return {
         lua = { "stylua" },
         fish = { "fish_indent" },
         sh = { "shfmt" },
+        php = { { "php_cs_fixer" } },
         ["javascript"] = { "prettier" },
         ["svelte"] = { "prettier" },
         ["javascriptreact"] = { "prettier" },

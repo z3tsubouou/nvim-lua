@@ -133,8 +133,8 @@ return {
           keymap = {
             -- accept = "<M-l>",
             accept = "<M-CR>",
-            accept_word = false,
-            accept_line = false,
+            accept_word = "<M-w>",
+            accept_line = "<M-l>",
             next = "<M-]>",
             prev = "<M-[>",
             dismiss = "<M-d>",
