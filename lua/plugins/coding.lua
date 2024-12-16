@@ -18,85 +18,85 @@ return {
       },
     },
   },
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-emoji",
-    },
-    event = "VeryLazy",
-    opts = function(_, opts)
-      local cmp = require("cmp")
-
-      local defaults = require("cmp.config.default")()
-
-      opts.window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered(),
-      }
-
-      opts.completion = {
-        completeopt = "menu,menuone,noinsert",
-      }
-
-      opts.snippet = {
-        expand = function(args)
-          require("luasnip").lsp_expand(args.body)
-        end,
-      }
-
-      opts.formatting = {
-        format = function(_, item)
-          local icons = require("lazyvim.config").icons.kinds
-          if icons[item.kind] then
-            item.kind = icons[item.kind] .. item.kind
-          end
-          return item
-        end,
-      }
-
-      opts.mapping = cmp.mapping.preset.insert({
-        ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
-        ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
-        ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-        ["<C-f>"] = cmp.mapping.scroll_docs(4),
-        ["<C-c>"] = cmp.mapping.complete(),
-        ["<C-e>"] = cmp.mapping.abort(),
-        ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-        ["<S-CR>"] = cmp.mapping.confirm({
-          behavior = cmp.ConfirmBehavior.Replace,
-          select = true,
-        }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-        ["<C-CR>"] = function(fallback)
-          cmp.abort()
-          fallback()
-        end,
-        ["<Tab>"] = cmp.mapping(function(fallback)
-          local col = vim.fn.col(".") - 1
-
-          if cmp.visible() then
-            cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
-          elseif col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
-            fallback()
-          else
-            cmp.complete()
-          end
-        end, { "i", "s" }),
-
-        ["<S-Tab>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_prev_item({ behavior = cmp.SelectBehavior.Select })
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
-      })
-
-      table.insert(opts.sources, { name = "buffer" })
-      table.insert(opts.sources, { name = "emoji" })
-
-      opts.sorting = defaults.sorting
-    end,
-  },
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   dependencies = {
+  --     "hrsh7th/cmp-emoji",
+  --   },
+  --   event = "VeryLazy",
+  --   opts = function(_, opts)
+  --     local cmp = require("cmp")
+  --
+  --     local defaults = require("cmp.config.default")()
+  --
+  --     opts.window = {
+  --       completion = cmp.config.window.bordered(),
+  --       documentation = cmp.config.window.bordered(),
+  --     }
+  --
+  --     opts.completion = {
+  --       completeopt = "menu,menuone,noinsert",
+  --     }
+  --
+  --     opts.snippet = {
+  --       expand = function(args)
+  --         require("luasnip").lsp_expand(args.body)
+  --       end,
+  --     }
+  --
+  --     opts.formatting = {
+  --       format = function(_, item)
+  --         local icons = require("lazyvim.config").icons.kinds
+  --         if icons[item.kind] then
+  --           item.kind = icons[item.kind] .. item.kind
+  --         end
+  --         return item
+  --       end,
+  --     }
+  --
+  --     opts.mapping = cmp.mapping.preset.insert({
+  --       ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
+  --       ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
+  --       ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+  --       ["<C-f>"] = cmp.mapping.scroll_docs(4),
+  --       ["<C-c>"] = cmp.mapping.complete(),
+  --       ["<C-e>"] = cmp.mapping.abort(),
+  --       ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+  --       ["<S-CR>"] = cmp.mapping.confirm({
+  --         behavior = cmp.ConfirmBehavior.Replace,
+  --         select = true,
+  --       }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+  --       ["<C-CR>"] = function(fallback)
+  --         cmp.abort()
+  --         fallback()
+  --       end,
+  --       ["<Tab>"] = cmp.mapping(function(fallback)
+  --         local col = vim.fn.col(".") - 1
+  --
+  --         if cmp.visible() then
+  --           cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
+  --         elseif col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
+  --           fallback()
+  --         else
+  --           cmp.complete()
+  --         end
+  --       end, { "i", "s" }),
+  --
+  --       ["<S-Tab>"] = cmp.mapping(function(fallback)
+  --         if cmp.visible() then
+  --           cmp.select_prev_item({ behavior = cmp.SelectBehavior.Select })
+  --         else
+  --           fallback()
+  --         end
+  --       end, { "i", "s" }),
+  --     })
+  --
+  --     table.insert(opts.sources, { name = "buffer" })
+  --     table.insert(opts.sources, { name = "emoji" })
+  --
+  --     opts.sorting = defaults.sorting
+  --   end,
+  -- },
   -- {
   --   "zbirenbaum/copilot-cmp",
   --   event = "VeryLazy",
